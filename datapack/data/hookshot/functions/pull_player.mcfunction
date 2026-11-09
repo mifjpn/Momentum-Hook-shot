@@ -15,7 +15,7 @@ scoreboard players operation $y delta.api.launch -= $dy delta.api.launch
 
 execute store result score $z delta.api.launch run data get storage delta:storage TargetPos[2] 1000
 execute store result score $dz delta.api.launch run data get storage delta:storage PlayerPos[2] 1000
-scoreboard players operation $z delta.api.launch -= $z delta.api.launch
+scoreboard players operation $z delta.api.launch -= $dz delta.api.launch
 
 # delta の launch_xyz API を実行してプレイヤーを高速牽引
 function delta:api/launch_xyz
