@@ -1,6 +1,14 @@
 {
   "pack": {
     "pack_format": 26,
-    "description": "Ver 1.3.0 [by Chuzume]"
+    "description": "Ver 1.3.0 [by Mifjpn] (Purpur 26.3)"
   }
 }
+```[cite: 35]
+
+バージョン 2657 の環境に合わせてファイルを設定したら、ゲーム内で `/reload` を実行してエラーが出ないか最終確認を行ってみてください。
+
+<ElicitationsGroup message="データパックの最終確認やテストについて：">
+  <Elicitation label="ゲーム内でのリロードと動作確認を行う" query="データパックをサーバーに導入して /reload を実行した後の確認手順や、エラーが出たときのチェック項目を知りたいです。"/>
+  <Elicitation label="クロスボウのgiveコマンドを再確認する" query="フックショット用のクロスボウを召喚するための /give コマンドの書き方をもう一度おさらいしたいです。"/>
+</ElicitationsGroup>
