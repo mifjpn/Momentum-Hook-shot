@@ -4,24 +4,3 @@
   ]
 }
 ```[cite: 5, 11]
-
-<Steps>
-  <Step subtitle="ファイル配置の確認" title="tick.jsonの設置">
-    `datapack/data/hookshot/tags/function/tick.json` が存在し、上記の内容が書き込まれていることを確認します。
-    *Verification:* ディレクトリ内に `load.json` と `tick.json` の両方が揃っている状態になります[cite: 11, 12]。
-  </Step>
-  <Step subtitle="サーバーでの再読み込み" title="/reload の実行">
-    Minecraftサーバー内で以下のコマンドを実行し、データパックを再読み込みします。
-    ```text
-    /reload
-    ```
-    *Verification:* サーバーコンソールやログから `Couldn't load tag` のエラーが完全に消えることを確認します[cite: 11]。
-  </Step>
-</Steps>
-
-<ElicitationsGroup message="もしタグやファンクションの連動についてさらに調整が必要な場合は：">
-  <Elicitation label="tick.mcfunctionの中身を確認する" query="hookshot:tickから呼び出されるtick.mcfunctionの記述内容に抜け漏れがないか確認したい。"/>
-  <Elicitation label="他のネームスペースとの競合を防ぐ" query="ほかのデータパックと競合しないためのfunctionタグの構成方法を教えてほしい。"/>
-</ElicitationsGroup>
-
-<FollowUp label="Want me to show you the complete list of files that should be inside the hookshot tags directory?" query="hookshotネームスペースのtagsディレクトリに必要なファイルの一覧と構成を教えてほしい。"/>
