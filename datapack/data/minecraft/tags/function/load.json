@@ -1,6 +1,5 @@
 {
   "values": [
-    "chuzitems:load",
-    "delta:internal/technical/load"
-    ]
+    "hookshot:load"
+  ]
 }
