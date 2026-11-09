@@ -1,6 +1,0 @@
-{
-    "parent": "item/3dmodel/weapon/re_cross_hookshot/true",
-	"textures": {
-		"3": "item/custom_item/re_cross_hookshot/basic"
-	}
-}
