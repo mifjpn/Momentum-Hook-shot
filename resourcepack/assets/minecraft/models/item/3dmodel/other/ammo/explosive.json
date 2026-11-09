@@ -1,6 +1,0 @@
-{
-    "parent": "item/3dmodel/other/ammo/heavy",
-	"textures": {
-		"0": "item/custom_item/ammo/explosive"
-	}
-}
