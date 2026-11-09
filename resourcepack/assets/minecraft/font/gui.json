@@ -1,0 +1,35 @@
+{
+    "providers": [
+            {
+            "type": "bitmap",
+            "file": "minecraft:font/gui/catalogue_left.png",
+            "height": 256,
+            "ascent": 58,
+            "chars": [
+                "\uE010"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:font/gui/catalogue_right.png",
+            "height": 256,
+            "ascent": 58 ,
+            "chars": [
+                "\uE011"
+            ]
+        },
+        {
+            "type": "space",
+            "advances": {
+               "\uE012": -172
+            }
+        },
+        {
+            "type": "space",
+            "advances": {
+               "\uE013": -44
+            }
+         }
+        
+    ]
+}

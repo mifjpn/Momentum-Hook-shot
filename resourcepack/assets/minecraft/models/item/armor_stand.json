@@ -1,0 +1,24 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "item/armor_stand"
+	},
+	"overrides": [
+	{"predicate": {"custom_model_data": 1},"model": "item/3dmodel/other/dimensional_catalogue/close"},
+	{"predicate": {"custom_model_data": 2},"model": "item/3dmodel/other/dimensional_catalogue/open"},
+	{"predicate": {"custom_model_data": 3},"model": "item/3dmodel/mob/heavy_golem1/golem_leg"},
+	{"predicate": {"custom_model_data": 4},"model": "item/3dmodel/mob/heavy_golem1/golem_arm_left"},
+	{"predicate": {"custom_model_data": 5},"model": "item/3dmodel/mob/heavy_golem1/golem_arm_right"},
+	{"predicate": {"custom_model_data": 6},"model": "item/3dmodel/mob/heavy_golem1/golem_arm_right_attack"},
+	{"predicate": {"custom_model_data": 7},"model": "item/3dmodel/mob/slime_girl/slimegirl2_idle"},
+	{"predicate": {"custom_model_data": 8},"model": "item/3dmodel/mob/slime_girl/slimegirl2_jump"},
+	{"predicate": {"custom_model_data": 9},"model": "item/3dmodel/mob/slime_girl/slimegirl2_hurt"},
+	{"predicate": {"custom_model_data": 10},"model": "item/3dmodel/mob/slimeigirlslimegirl2_died"},
+	{"predicate": {"custom_model_data": 12},"model": "item/3dmodel/mob/buddy_drone/drone_flying"},
+	{"predicate": {"custom_model_data": 13},"model": "item/3dmodel/other/drone_porter"},
+	{"predicate": {"custom_model_data": 14},"model": "item/3dmodel/other/glint_block/block"},
+	{"predicate": {"custom_model_data": 15},"model": "item/3dmodel/other/glint_block/carpet"},
+	{"predicate": {"custom_model_data": 16},"model": "item/3dmodel/other/glint_block/slab_bottom"},
+	{"predicate": {"custom_model_data": 17},"model": "item/3dmodel/other/glint_block/slab_top"}
+	]
+}

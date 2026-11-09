@@ -1,0 +1,13 @@
+{
+    "parent": "item/3dmodel/weapon/axe_shot_ranged",
+        "display": {
+		"firstperson_righthand": {
+			"rotation": [-15, 55, 0],
+			"translation": [-8, 6, -5]
+		},
+		"firstperson_lefthand": {
+			"rotation": [-15, 55, 0],
+			"translation": [-8, 6, -5]
+		}
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "parent": "item/3dmodel/weapon/pig_launcher",
+        "display": {
+		"firstperson_righthand": {
+			"rotation": [-15, 65, 0],
+			"translation": [-4, 0, -5]
+		},
+		"firstperson_lefthand": {
+			"rotation": [-15, 65, 0],
+			"translation": [-4, 0, -5]
+		}
+    }
+}

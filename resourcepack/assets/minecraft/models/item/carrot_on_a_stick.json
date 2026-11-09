@@ -1,0 +1,12 @@
+{
+    "parent": "item/handheld_rod", 
+    "textures": {
+        "layer0": "item/carrot_on_a_stick"
+    },
+    "overrides": [
+		{ "predicate": {"custom_model_data": 1}, "model": "item/3dmodel/weapon/axe_shot_ranged"},
+		{ "predicate": {"custom_model_data": 2}, "model": "item/3dmodel/weapon/axe_shot_ranged_reload"},
+		{ "predicate": {"custom_model_data": 3}, "model": "item/3dmodel/weapon/axe_shot_melee"},
+    { "predicate": {"custom_model_data": 4}, "model": "item/3dmodel/weapon/drone_blade"}
+   ]
+}

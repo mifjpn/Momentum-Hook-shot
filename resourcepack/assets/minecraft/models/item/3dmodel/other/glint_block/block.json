@@ -1,0 +1,12 @@
+{
+	"parent": "minecraft:block/cube_all",
+	"textures": {
+		"all": "item/custom_item/glint_block"
+	},
+	"display": {
+		"head": {
+			"translation": [0, -32.95, 0],
+			"scale": [2.287, 2.3, 2.287]
+		}
+	}
+}

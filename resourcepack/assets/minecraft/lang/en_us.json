@@ -1,0 +1,8 @@
+{
+    "death.attack.bullet": "%1$s was shot by %2$s",
+    "death.attack.bullet.item": "%1$s was shot by %2$s using %3$s",
+    "death.attack.bullet_headshot": "%1$s was accurately shot in the head by %2$s",
+    "death.attack.bullet_headshot.item": "%1$s was accurately shot in the head by %2$s using %3$s",
+    "death.attack.thrown_gun": "%1$s was hit by a gun thrown by %2$s",
+    "death.attack.thrown_gun.item": "%1$s was hit by a gun thrown by %2$s"
+}

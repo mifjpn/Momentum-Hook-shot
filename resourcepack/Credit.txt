@@ -1,0 +1,9 @@
+
+-assets/chuzume/soundsフォルダ内"lemudcrab"内のサウンド
+-LeMudCrab様
+-URL:https://freesound.org/people/LeMudCrab/
+
+
+-assets/chuzume/soundsフォルダ内"otologic"内のサウンド
+-OtoLogic様
+-URL:https://otologic.jp/free/license.html

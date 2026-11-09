@@ -1,0 +1,12 @@
+{
+  "launcher_shot":        {"sounds": ["chuzume:lemudcrab/launcher"]},
+  "pistol_shot":        {"sounds": ["chuzume:lemudcrab/pistol"]},
+  "rifle_shot":        {"sounds": ["chuzume:lemudcrab/rifle"]},
+  "sniper_shot":        {"sounds": ["chuzume:lemudcrab/sniper"]},
+  "cash_register01_2":        {"sounds": ["chuzume:otologic/cash_register_drawer01_2"]},
+  "cyber19_1":        {"sounds": ["chuzume:otologic/cyber19_1"]},
+  "blaster1":        {"sounds": ["chuzume:scansecret/blaster1"]},
+  "blaster2":        {"sounds": ["chuzume:scansecret/blaster2"]},
+  "blaster2_high":        {"sounds": ["chuzume:scansecret/blaster2_high"]},
+  "blaster3":        {"sounds": ["chuzume:scansecret/blaster3"]}
+}

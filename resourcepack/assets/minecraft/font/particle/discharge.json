@@ -1,0 +1,13 @@
+{
+    "providers": [
+            {
+            "type": "bitmap",
+            "file": "minecraft:font/particle/discharge.png",
+            "height": 32,
+            "ascent": 13,
+            "chars": [
+                "\uE010\uE011\uE012\uE013\uE014"
+            ]
+        }
+    ]
+}

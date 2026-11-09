@@ -1,0 +1,14 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "item/effect/slash/1",
+        "layer1": "item/effect/slash/1_overlay"
+    },
+        "display": {
+            "ground": {
+                "rotation": [90, 0, 0],
+                "translation": [0, 0, 0],
+                "scale": [1, 1, 0.05]
+            }
+        }
+    }
