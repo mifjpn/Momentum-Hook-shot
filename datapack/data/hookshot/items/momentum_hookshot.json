@@ -1,0 +1,9 @@
+{
+  "item": {
+    "id": "minecraft:crossbow",
+    "components": {
+      "minecraft:custom_model_data": 38,
+      "minecraft:item_name": "{\"text\":\"Momentum Hookshot\",\"color\":\"aqua\",\"bold\":true}"
+    }
+  }
+}

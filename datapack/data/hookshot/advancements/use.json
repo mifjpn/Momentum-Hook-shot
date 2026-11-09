@@ -1,0 +1,17 @@
+{
+  "criteria": {
+    "shoot_hookshot": {
+      "trigger": "minecraft:shot_crossbow",
+      "conditions": {
+        "item": {
+          "predicates": {
+            "minecraft:custom_model_data": 38
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "hookshot:pull"
+  }
+}
