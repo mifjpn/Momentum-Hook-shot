@@ -10,14 +10,8 @@
         "type": "minecraft:select",
         "property": "minecraft:charge_type",
         "cases": [
-          {
-            "when": "arrow",
-            "model": { "type": "minecraft:model", "model": "minecraft:item/crossbow_arrow" }
-          },
-          {
-            "when": "rocket",
-            "model": { "type": "minecraft:model", "model": "minecraft:item/crossbow_firework" }
-          }
+          { "when": "arrow", "model": { "type": "minecraft:model", "model": "minecraft:item/crossbow_arrow" } },
+          { "when": "rocket", "model": { "type": "minecraft:model", "model": "minecraft:item/crossbow_firework" } }
         ],
         "fallback": { "type": "minecraft:model", "model": "minecraft:item/crossbow" }
       },
@@ -35,15 +29,10 @@
       {
         "threshold": 38,
         "model": {
-          "type": "minecraft:select",
-          "property": "minecraft:charge_type",
-          "cases": [
-            {
-              "when": ["arrow", "rocket"],
-              "model": { "type": "minecraft:model", "model": "minecraft:item/3dmodel/weapon/momentum_hookshot/standby" }
-            }
-          ],
-          "fallback": { "type": "minecraft:model", "model": "minecraft:item/3dmodel/weapon/momentum_hookshot/standby_use" }
+          "type": "minecraft:condition",
+          "property": "minecraft:using_item",
+          "on_false": { "type": "minecraft:model", "model": "minecraft:item/3dmodel/weapon/momentum_hookshot/standby" },
+          "on_true": { "type": "minecraft:model", "model": "minecraft:item/3dmodel/weapon/momentum_hookshot/standby_use" }
         }
       },
       {

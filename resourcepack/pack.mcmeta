@@ -1,6 +1,5 @@
 {
   "pack": {
-    "pack_format": 97,
     "min_format": [97, 0],
     "max_format": [97, 1],
     "description": "Momentum Hookshot for 26.3"

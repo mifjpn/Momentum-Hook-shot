@@ -1,4 +1,7 @@
-﻿advancement revoke @s only hookshot:use
+advancement revoke @s only hookshot:use
+execute if score @s Hookshot.Cooldown matches 1 run scoreboard players set @s Hookshot.Cooldown 2
+execute if score @s Hookshot.Cooldown matches 1.. run return 0
+scoreboard players set @s Hookshot.Cooldown 10
 tag @s add using_hookshot
 kill @e[type=marker,tag=hook_active]
 execute anchored eyes positioned ^ ^ ^1 rotated as @s run summon marker ~ ~ ~ {Tags:["hook_active"]}

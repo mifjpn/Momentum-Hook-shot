@@ -1,4 +1,4 @@
-﻿schedule function delta:internal/technical/tick 1t replace
+schedule function delta:internal/technical/tick 1t replace
 scoreboard objectives add delta.api.launch dummy
 scoreboard objectives add delta.api.particle dummy
 scoreboard objectives add delta.internal.dummy dummy
@@ -35,3 +35,5 @@ execute in minecraft:overworld run forceload add 100000 100000
 kill d59ee2c6-58c8-4885-b9db-ecff066e4439
 execute in minecraft:overworld run summon marker 0.0 0.0 0.0 {UUID:[I;-711007546,1489520773,-1176769281,107889721],Tags:["global.ignore"]}
 data modify storage delta:macros rotation set value {"positive":0,"negative":0}
+kill a14fb143-2c93-4038-a58e-989c6590087a
+execute in minecraft:overworld run summon marker 0.0 0.0 0.0 {UUID:[I;-1588612797,747847736,-1517381476,1703938170],Tags:["global.ignore"]}
