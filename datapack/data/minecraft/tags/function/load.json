@@ -1,5 +1,6 @@
-{
+﻿{
   "values": [
+    "delta:internal/technical/load",
     "hookshot:load"
   ]
 }

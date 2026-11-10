@@ -2,13 +2,13 @@
   "item": {
     "id": "minecraft:crossbow",
     "components": {
-      "minecraft:custom_model_data": 38,
-      "minecraft:item_name": "{\"text\":\"Momentum Hookshot\",\"color\":\"aqua\",\"bold\":true}"
+      "minecraft:custom_model_data": {
+        "floats": [38]
+      },
+      "minecraft:item_name": "{\"text\":\"Momentum Hookshot\",\"color\":\"aqua\",\"bold\":true}",
+      "minecraft:use_cooldown": {
+        "seconds": 0.5
+      }
     }
   }
 }
-```[cite: 9]
-
-このファイルは、データパック側（ネームスペース `hookshot` 内のアイテムコンポーネント等）で `minecraft:crossbow` をベースに `custom_model_data: 38` を付与し、アイテム名を設定するための定義ファイルです[cite: 9]。
-
-リソースパック側の `crossbow.json` にある `CustomModelData: 38`（通常時・構え時）と完全に一致しており[cite: 1, 9]、アイテムの初期生成や保持時のモデル（見えなくなるバグの防止）に対して、この定義がベースとして正しく機能します。

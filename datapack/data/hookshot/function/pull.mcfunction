@@ -1,4 +1,7 @@
-advancement revoke @s only hookshot:shoot_hookshot
-playsound entity.firework_rocket.launch player @s ~ ~ ~ 1 1
-particle firework ~ ~0.5 ~ 0.3 0.3 0.3 0.1 20
-execute as @s anchored eyes positioned ^ ^ ^2.0 run tp @s ~ ~ ~
+﻿tp @s ^ ^ ^1.2
+particle minecraft:crit ~ ~ ~ 0 0 0 0 1 force
+particle minecraft:electric_spark ~ ~ ~ 0 0 0 0 1 force
+scoreboard players remove @s Hookshot.Step 1
+execute unless block ~ ~ ~ #delta:no_collision run function hookshot:hit
+execute if entity @s[scores={Hookshot.Step=..0}] run tag @a remove using_hookshot
+execute if entity @s[scores={Hookshot.Step=..0}] run kill @s

@@ -1,5 +1,6 @@
-{
+﻿{
   "values": [
-    "hookshot:tick"
+    "hookshot:tick",
+    "delta:internal/technical/tick"
   ]
 }
