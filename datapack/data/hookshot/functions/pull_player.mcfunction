@@ -1,6 +1,3 @@
-# hookshot/functions/pull_player.mcfunction
-# プレイヤーの位置とストレージの TargetPos との差分を計算して launch_xyz に渡す
-
 # プレイヤージョンをストレージに一時保存
 data modify storage delta:storage PlayerPos set from entity @s Pos
 
