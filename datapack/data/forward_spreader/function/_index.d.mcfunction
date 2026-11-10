@@ -3,7 +3,7 @@
 
 #> Public
 # @api
-    #declare storage forward_spreader:
+    #declare storage forward_spreader:data
 
 #> Temp
 # @within forward_spreader:core/**

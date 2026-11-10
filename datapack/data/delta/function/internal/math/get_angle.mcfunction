@@ -35,7 +35,7 @@ function delta:internal/math/sqrt
 
 #Get atan2
 scoreboard players operation $adjusted_strength delta.internal.math /= #constant.2 delta.internal.math
-execute in overworld as a14fb143-2c93-4038-a58e-989c6590087a positioned 0.0 0.0 0.0 run function delta:internal/math/arcsin
+execute in minecraft:overworld as a14fb143-2c93-4038-a58e-989c6590087a positioned 0.0 0.0 0.0 run function delta:internal/math/arcsin
 
 #Get relative to current angle
 execute store result storage delta:macros rotation.positive int 0.000001 run scoreboard players get $rotation_offset delta.internal.math

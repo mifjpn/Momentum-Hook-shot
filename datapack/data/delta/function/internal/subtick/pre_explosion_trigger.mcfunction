@@ -19,7 +19,7 @@ gamemode creative
 tp @s ~ ~1000 ~
 
 # Store armor
-    execute in overworld run function delta:internal/subtick/store_armor
+    execute in minecraft:overworld run function delta:internal/subtick/store_armor
     item replace entity @s armor.feet with minecraft:air
     item replace entity @s armor.legs with minecraft:air
     item replace entity @s armor.chest with minecraft:air

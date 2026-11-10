@@ -6,4 +6,4 @@ tp @s 0.0 0.0 0.0
 execute at @s run function delta:internal/math/xyz_to_polar
 
 #Tp back to forceloaded chunks
-execute in overworld run tp @s 0.0 0.0 0.0
+execute in minecraft:overworld run tp @s 0.0 0.0 0.0
