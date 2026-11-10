@@ -8,4 +8,4 @@ execute as @a[scores={Hookshot.FallGuard=1}] run attribute @s minecraft:fall_dam
 execute as @a[scores={Hookshot.FallGuard=1..}] run scoreboard players remove @s Hookshot.FallGuard 1
 execute as @a[scores={Hookshot.Cooldown=11}] run function hookshot:enter_reload
 execute as @a[scores={Hookshot.Cooldown=1..}] run scoreboard players remove @s Hookshot.Cooldown 1
-execute as @a unless score @s Hookshot.Cooldown matches 1.. unless tag @s hook_has_wire at @s run function hookshot:check_recharge
+execute as @a[tag=!hook_has_wire] unless score @s Hookshot.Cooldown matches 1.. at @s run function hookshot:check_recharge
