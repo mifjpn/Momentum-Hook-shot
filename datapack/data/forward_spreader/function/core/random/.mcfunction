@@ -1,7 +1,4 @@
-#> forward_spreader:core/random/
-#
 # 0-65534の乱数を返します。
-#
 # @output result score uShort
 # @within function forward_spreader:core/randomizer
 

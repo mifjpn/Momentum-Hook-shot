@@ -1,5 +1,5 @@
 {
-  "type": "minecraft:copy_nbt",
+  "function": "minecraft:copy_custom_data",
   "source": {
     "type": "minecraft:storage",
     "source": "delta:storage"

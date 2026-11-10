@@ -1,7 +1,4 @@
-#> forward_spreader:core/random/init
-#
 # 疑似乱数生成処理を初期化します
-#
 # @within function forward_spreader:core/load
 
 #> generate seed temporary entity

@@ -12,5 +12,5 @@
 # @public
 
 scoreboard players set $CircleRandomizerMode ForwardSpreader 1
-function forward_spreader:core/
+function forward_spreader:core/main
 scoreboard players reset $CircleRandomizerMode ForwardSpreader

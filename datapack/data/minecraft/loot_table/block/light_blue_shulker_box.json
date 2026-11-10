@@ -15,9 +15,7 @@
                 {
                   "condition": "minecraft:match_tool",
                   "predicate": {
-                    "items": [
-                      "minecraft:debug_stick"
-                    ]
+                    "item": "minecraft:debug_stick"
                   }
                 }
               ]
@@ -30,29 +28,17 @@
                   "source": "block_entity"
                 },
                 {
-                  "function": "minecraft:copy_nbt",
+                  "function": "minecraft:copy_components",
                   "source": "block_entity",
-                  "ops": [
-                    {
-                      "source": "Lock",
-                      "target": "BlockEntityTag.Lock",
-                      "op": "replace"
-                    },
-                    {
-                      "source": "LootTable",
-                      "target": "BlockEntityTag.LootTable",
-                      "op": "replace"
-                    },
-                    {
-                      "source": "LootTableSeed",
-                      "target": "BlockEntityTag.LootTableSeed",
-                      "op": "replace"
-                    }
+                  "include": [
+                    "minecraft:lock",
+                    "minecraft:loot_table",
+                    "minecraft:loot_table_seed"
                   ]
                 },
                 {
                   "function": "minecraft:set_contents",
-                  "type": "minecraft:shulker_box",
+                  "type": "minecraft:container",
                   "entries": [
                     {
                       "type": "minecraft:dynamic",
@@ -69,3 +55,9 @@
     }
   ]
 }
+```[cite: 56]
+
+<ElicitationsGroup message="次の確認へ進みますか？">
+  <Elicitation label="他のloot_tableを確認する" query="他にも確認・修正が必要なloot_tableファイルがあればパスと中身を渡します。"/>
+  <Elicitation label="データパック全体の検証を完了する" query="これでデータパック内のすべてのファイル確認と修正が完了です。"/>
+</ElicitationsGroup>

@@ -11,4 +11,4 @@
 #       Spread : float
 # @public
 
-function forward_spreader:core/
+function forward_spreader:core/main
