@@ -7,8 +7,13 @@ scoreboard objectives add Hookshot.PullTicks dummy
 scoreboard objectives add Hookshot.PullElapsed dummy
 scoreboard objectives add Hookshot.WireLife dummy
 scoreboard objectives add Hookshot.FallGuard dummy
+scoreboard objectives add Hookshot.WallHang dummy
+scoreboard objectives add Hookshot.StepGuard dummy
 scoreboard objectives add Hookshot.AnchorY dummy
 scoreboard objectives add Hookshot.PlayerY dummy
+scoreboard objectives add Hookshot.Pitch dummy
+scoreboard objectives add Hookshot.VelY dummy
 scoreboard objectives add Hookshot.LastSteps dummy
 scoreboard objectives add Hookshot.StuckTicks dummy
-say [Momentum-Hook-shot] Hookshot Datapack Loaded successfully (26.3 Wire & Physics).
+kill @e[tag=hook_obj]
+say [Momentum-Hook-shot] Hookshot Datapack Loaded successfully (26.3 WallClimb & FullWire).

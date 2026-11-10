@@ -4,8 +4,12 @@ execute as @a[scores={Hookshot.Shot=1..}] run scoreboard players set @s Hookshot
 execute as @a[tag=hook_has_wire] at @s run function hookshot:update_wire_and_pull
 execute as @a[scores={Hookshot.WireLife=1..}] run scoreboard players remove @s Hookshot.WireLife 1
 execute as @a[tag=hook_has_wire] unless score @s Hookshot.PullTicks matches 1.. unless score @s Hookshot.WireLife matches 1.. run function hookshot:finish_wire
+execute as @a[scores={Hookshot.WallHang=1}] run attribute @s minecraft:gravity modifier remove hookshot:wall_hang
+execute as @a[scores={Hookshot.WallHang=1..}] run scoreboard players remove @s Hookshot.WallHang 1
+execute as @a[scores={Hookshot.StepGuard=1}] run attribute @s minecraft:step_height modifier remove hookshot:step_boost
+execute as @a[scores={Hookshot.StepGuard=1..}] run scoreboard players remove @s Hookshot.StepGuard 1
 execute as @a[scores={Hookshot.FallGuard=1}] run attribute @s minecraft:fall_damage_multiplier modifier remove hookshot:fall_guard
 execute as @a[scores={Hookshot.FallGuard=1..}] run scoreboard players remove @s Hookshot.FallGuard 1
-execute as @a[scores={Hookshot.Cooldown=11}] run function hookshot:enter_reload
+execute as @a[scores={Hookshot.Cooldown=4}] run function hookshot:enter_reload
 execute as @a[scores={Hookshot.Cooldown=1..}] run scoreboard players remove @s Hookshot.Cooldown 1
-execute as @a[tag=!hook_has_wire] unless score @s Hookshot.Cooldown matches 1.. at @s run function hookshot:check_recharge
+execute as @a unless score @s Hookshot.Cooldown matches 1.. at @s run function hookshot:check_recharge

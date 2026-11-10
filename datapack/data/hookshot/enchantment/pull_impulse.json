@@ -12,130 +12,128 @@
   "effects": {
     "minecraft:tick": [
       {
-        "requirements": {
-          "type": "minecraft:entity_scores",
-          "entity": "this",
-          "scores": { "Hookshot.Impulse": { "min": 1, "max": 1 } }
-        },
-        "effect": {
-          "type": "minecraft:all_of",
-          "effects": [
-            {
-              "type": "minecraft:apply_impulse",
-              "direction": [0.0, 0.30, 1.0],
-              "coordinate_scale": [1.0, 1.0, 1.0],
-              "magnitude": 0.35
-            },
-            { "type": "minecraft:run_function", "function": "hookshot:clear_impulse" }
-          ]
-        }
+        "requirements": { "type": "minecraft:entity_scores", "entity": "this", "scores": { "Hookshot.Impulse": { "min": 1, "max": 1 } } },
+        "effect": { "type": "minecraft:all_of", "effects": [
+          { "type": "minecraft:apply_impulse", "direction": [0.0, 0.0, 1.0], "coordinate_scale": [1.0, 1.0, 1.0], "magnitude": 0.46 },
+          { "type": "minecraft:run_function", "function": "hookshot:clear_impulse" }
+        ]}
       },
       {
-        "requirements": {
-          "type": "minecraft:entity_scores",
-          "entity": "this",
-          "scores": { "Hookshot.Impulse": { "min": 2, "max": 2 } }
-        },
-        "effect": {
-          "type": "minecraft:all_of",
-          "effects": [
-            {
-              "type": "minecraft:apply_impulse",
-              "direction": [0.0, 0.65, 0.75],
-              "coordinate_scale": [1.0, 1.0, 1.0],
-              "magnitude": 0.36
-            },
-            { "type": "minecraft:run_function", "function": "hookshot:clear_impulse" }
-          ]
-        }
+        "requirements": { "type": "minecraft:entity_scores", "entity": "this", "scores": { "Hookshot.Impulse": { "min": 2, "max": 2 } } },
+        "effect": { "type": "minecraft:all_of", "effects": [
+          { "type": "minecraft:apply_impulse", "direction": [0.0, 0.0, 1.0], "coordinate_scale": [1.0, 1.0, 1.0], "magnitude": 0.26 },
+          { "type": "minecraft:run_function", "function": "hookshot:clear_impulse" }
+        ]}
       },
       {
-        "requirements": {
-          "type": "minecraft:entity_scores",
-          "entity": "this",
-          "scores": { "Hookshot.Impulse": { "min": 3, "max": 3 } }
-        },
-        "effect": {
-          "type": "minecraft:all_of",
-          "effects": [
-            {
-              "type": "minecraft:apply_impulse",
-              "direction": [0.0, 0.15, -1.0],
-              "coordinate_scale": [1.0, 1.0, 1.0],
-              "magnitude": 0.90
-            },
-            { "type": "minecraft:run_function", "function": "hookshot:clear_impulse" }
-          ]
-        }
+        "requirements": { "type": "minecraft:entity_scores", "entity": "this", "scores": { "Hookshot.Impulse": { "min": 3, "max": 3 } } },
+        "effect": { "type": "minecraft:all_of", "effects": [
+          { "type": "minecraft:apply_impulse", "direction": [0.0, 0.0, -1.0], "coordinate_scale": [1.0, 0.0, 1.0], "magnitude": 0.55 },
+          { "type": "minecraft:run_function", "function": "hookshot:clear_impulse" }
+        ]}
       },
       {
-        "requirements": {
-          "type": "minecraft:entity_scores",
-          "entity": "this",
-          "scores": { "Hookshot.Impulse": { "min": 4, "max": 4 } }
-        },
-        "effect": {
-          "type": "minecraft:all_of",
-          "effects": [
-            {
-              "type": "minecraft:apply_impulse",
-              "direction": [0.0, 1.0, 0.0],
-              "coordinate_scale": [0.0, 1.0, 0.0],
-              "magnitude": 0.58
-            },
-            {
-              "type": "minecraft:apply_impulse",
-              "direction": [0.0, 0.0, -1.0],
-              "coordinate_scale": [1.0, 0.0, 1.0],
-              "magnitude": 0.35
-            },
-            { "type": "minecraft:run_function", "function": "hookshot:clear_impulse" }
-          ]
-        }
+        "requirements": { "type": "minecraft:entity_scores", "entity": "this", "scores": { "Hookshot.Impulse": { "min": 6, "max": 6 } } },
+        "effect": { "type": "minecraft:all_of", "effects": [
+          { "type": "minecraft:apply_impulse", "direction": [0.0, 0.0, -1.0], "coordinate_scale": [1.0, 0.0, 1.0], "magnitude": 0.50 },
+          { "type": "minecraft:run_function", "function": "hookshot:clear_impulse" }
+        ]}
       },
       {
-        "requirements": {
-          "type": "minecraft:entity_scores",
-          "entity": "this",
-          "scores": { "Hookshot.Impulse": { "min": 5, "max": 5 } }
-        },
-        "effect": {
-          "type": "minecraft:all_of",
-          "effects": [
-            {
-              "type": "minecraft:apply_impulse",
-              "direction": [0.0, 1.0, 0.0],
-              "coordinate_scale": [0.0, 1.0, 0.0],
-              "magnitude": 0.60
-            },
-            {
-              "type": "minecraft:apply_impulse",
-              "direction": [0.0, 0.0, 1.0],
-              "coordinate_scale": [1.0, 0.0, 1.0],
-              "magnitude": 0.25
-            },
-            { "type": "minecraft:run_function", "function": "hookshot:clear_impulse" }
-          ]
-        }
+        "requirements": { "type": "minecraft:entity_scores", "entity": "this", "scores": { "Hookshot.Impulse": { "min": 11, "max": 11 } } },
+        "effect": { "type": "minecraft:all_of", "effects": [
+          { "type": "minecraft:apply_impulse", "direction": [0.0, 0.0, 1.0], "coordinate_scale": [0.0, 1.0, 0.0], "magnitude": 0.60 },
+          { "type": "minecraft:apply_impulse", "direction": [0.0, 0.0, -1.0], "coordinate_scale": [1.0, 0.0, 1.0], "magnitude": 0.45 },
+          { "type": "minecraft:run_function", "function": "hookshot:clear_impulse" }
+        ]}
       },
       {
-        "requirements": {
-          "type": "minecraft:entity_scores",
-          "entity": "this",
-          "scores": { "Hookshot.Impulse": { "min": 6, "max": 6 } }
-        },
-        "effect": {
-          "type": "minecraft:all_of",
-          "effects": [
-            {
-              "type": "minecraft:apply_impulse",
-              "direction": [0.0, 0.0, -1.0],
-              "coordinate_scale": [1.0, 0.0, 1.0],
-              "magnitude": 0.45
-            },
-            { "type": "minecraft:run_function", "function": "hookshot:clear_impulse" }
-          ]
-        }
+        "requirements": { "type": "minecraft:entity_scores", "entity": "this", "scores": { "Hookshot.Impulse": { "min": 12, "max": 12 } } },
+        "effect": { "type": "minecraft:all_of", "effects": [
+          { "type": "minecraft:apply_impulse", "direction": [0.0, 1.0, 0.0], "coordinate_scale": [0.0, 1.0, 0.0], "magnitude": 0.60 },
+          { "type": "minecraft:apply_impulse", "direction": [0.0, 0.0, -1.0], "coordinate_scale": [1.0, 0.0, 1.0], "magnitude": 0.50 },
+          { "type": "minecraft:run_function", "function": "hookshot:clear_impulse" }
+        ]}
+      },
+      {
+        "requirements": { "type": "minecraft:entity_scores", "entity": "this", "scores": { "Hookshot.Impulse": { "min": 13, "max": 13 } } },
+        "effect": { "type": "minecraft:all_of", "effects": [
+          { "type": "minecraft:apply_impulse", "direction": [0.0, 0.0, -1.0], "coordinate_scale": [0.0, 1.0, 0.0], "magnitude": 0.60 },
+          { "type": "minecraft:apply_impulse", "direction": [0.0, 0.0, -1.0], "coordinate_scale": [1.0, 0.0, 1.0], "magnitude": 0.45 },
+          { "type": "minecraft:run_function", "function": "hookshot:clear_impulse" }
+        ]}
+      },
+      {
+        "requirements": { "type": "minecraft:entity_scores", "entity": "this", "scores": { "Hookshot.Impulse": { "min": 14, "max": 14 } } },
+        "effect": { "type": "minecraft:all_of", "effects": [
+          { "type": "minecraft:apply_impulse", "direction": [0.0, 0.0, 1.0], "coordinate_scale": [0.0, 1.0, 0.0], "magnitude": 0.66 },
+          { "type": "minecraft:apply_impulse", "direction": [0.0, 0.0, 1.0], "coordinate_scale": [1.0, 0.0, 1.0], "magnitude": 0.22 },
+          { "type": "minecraft:run_function", "function": "hookshot:clear_impulse" }
+        ]}
+      },
+      {
+        "requirements": { "type": "minecraft:entity_scores", "entity": "this", "scores": { "Hookshot.Impulse": { "min": 15, "max": 15 } } },
+        "effect": { "type": "minecraft:all_of", "effects": [
+          { "type": "minecraft:apply_impulse", "direction": [0.0, 1.0, 0.0], "coordinate_scale": [0.0, 1.0, 0.0], "magnitude": 0.66 },
+          { "type": "minecraft:apply_impulse", "direction": [0.0, 0.0, 1.0], "coordinate_scale": [1.0, 0.0, 1.0], "magnitude": 0.20 },
+          { "type": "minecraft:run_function", "function": "hookshot:clear_impulse" }
+        ]}
+      },
+      {
+        "requirements": { "type": "minecraft:entity_scores", "entity": "this", "scores": { "Hookshot.Impulse": { "min": 16, "max": 16 } } },
+        "effect": { "type": "minecraft:all_of", "effects": [
+          { "type": "minecraft:apply_impulse", "direction": [0.0, 0.0, -1.0], "coordinate_scale": [0.0, 1.0, 0.0], "magnitude": 0.66 },
+          { "type": "minecraft:apply_impulse", "direction": [0.0, 0.0, 1.0], "coordinate_scale": [1.0, 0.0, 1.0], "magnitude": 0.20 },
+          { "type": "minecraft:run_function", "function": "hookshot:clear_impulse" }
+        ]}
+      },
+      {
+        "requirements": { "type": "minecraft:entity_scores", "entity": "this", "scores": { "Hookshot.Impulse": { "min": 21, "max": 21 } } },
+        "effect": { "type": "minecraft:all_of", "effects": [
+          { "type": "minecraft:apply_impulse", "direction": [0.0, 0.0, 1.0], "coordinate_scale": [0.0, 1.0, 0.0], "magnitude": 1.22 },
+          { "type": "minecraft:apply_impulse", "direction": [0.0, 0.0, 1.0], "coordinate_scale": [1.0, 0.0, 1.0], "magnitude": 0.22 },
+          { "type": "minecraft:run_function", "function": "hookshot:clear_impulse" }
+        ]}
+      },
+      {
+        "requirements": { "type": "minecraft:entity_scores", "entity": "this", "scores": { "Hookshot.Impulse": { "min": 22, "max": 22 } } },
+        "effect": { "type": "minecraft:all_of", "effects": [
+          { "type": "minecraft:apply_impulse", "direction": [0.0, 0.0, 1.0], "coordinate_scale": [0.0, 1.0, 0.0], "magnitude": 0.84 },
+          { "type": "minecraft:apply_impulse", "direction": [0.0, 0.0, 1.0], "coordinate_scale": [1.0, 0.0, 1.0], "magnitude": 0.22 },
+          { "type": "minecraft:run_function", "function": "hookshot:clear_impulse" }
+        ]}
+      },
+      {
+        "requirements": { "type": "minecraft:entity_scores", "entity": "this", "scores": { "Hookshot.Impulse": { "min": 23, "max": 23 } } },
+        "effect": { "type": "minecraft:all_of", "effects": [
+          { "type": "minecraft:apply_impulse", "direction": [0.0, 0.0, 1.0], "coordinate_scale": [0.0, 1.0, 0.0], "magnitude": 0.46 },
+          { "type": "minecraft:apply_impulse", "direction": [0.0, 0.0, 1.0], "coordinate_scale": [1.0, 0.0, 1.0], "magnitude": 0.22 },
+          { "type": "minecraft:run_function", "function": "hookshot:clear_impulse" }
+        ]}
+      },
+      {
+        "requirements": { "type": "minecraft:entity_scores", "entity": "this", "scores": { "Hookshot.Impulse": { "min": 24, "max": 24 } } },
+        "effect": { "type": "minecraft:all_of", "effects": [
+          { "type": "minecraft:apply_impulse", "direction": [0.0, 1.0, 0.0], "coordinate_scale": [0.0, 1.0, 0.0], "magnitude": 1.18 },
+          { "type": "minecraft:apply_impulse", "direction": [0.0, 0.0, 1.0], "coordinate_scale": [1.0, 0.0, 1.0], "magnitude": 0.20 },
+          { "type": "minecraft:run_function", "function": "hookshot:clear_impulse" }
+        ]}
+      },
+      {
+        "requirements": { "type": "minecraft:entity_scores", "entity": "this", "scores": { "Hookshot.Impulse": { "min": 25, "max": 25 } } },
+        "effect": { "type": "minecraft:all_of", "effects": [
+          { "type": "minecraft:apply_impulse", "direction": [0.0, 1.0, 0.0], "coordinate_scale": [0.0, 1.0, 0.0], "magnitude": 0.80 },
+          { "type": "minecraft:apply_impulse", "direction": [0.0, 0.0, 1.0], "coordinate_scale": [1.0, 0.0, 1.0], "magnitude": 0.20 },
+          { "type": "minecraft:run_function", "function": "hookshot:clear_impulse" }
+        ]}
+      },
+      {
+        "requirements": { "type": "minecraft:entity_scores", "entity": "this", "scores": { "Hookshot.Impulse": { "min": 26, "max": 26 } } },
+        "effect": { "type": "minecraft:all_of", "effects": [
+          { "type": "minecraft:apply_impulse", "direction": [0.0, 1.0, 0.0], "coordinate_scale": [0.0, 1.0, 0.0], "magnitude": 0.44 },
+          { "type": "minecraft:apply_impulse", "direction": [0.0, 0.0, 1.0], "coordinate_scale": [1.0, 0.0, 1.0], "magnitude": 0.20 },
+          { "type": "minecraft:run_function", "function": "hookshot:clear_impulse" }
+        ]}
       }
     ]
   }
