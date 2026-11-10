@@ -1,5 +1,14 @@
-playsound minecraft:entity.wind_charge.wind_burst master @a ~ ~ ~ 1.2 1.2
-particle minecraft:gust ~ ~ ~ 0.3 0.3 0.3 0 3 force
-execute if items entity @s weapon.mainhand minecraft:crossbow[minecraft:custom_data~{Hookshot:1b}] run item modify entity @s weapon.mainhand hookshot:ensure_enchant
-execute if items entity @s weapon.offhand minecraft:crossbow[minecraft:custom_data~{Hookshot:1b}] run item modify entity @s weapon.offhand hookshot:ensure_enchant
-scoreboard players set @s Hookshot.Impulse 1
+playsound minecraft:entity.wind_charge.wind_burst master @a ~ ~ ~ 1.0 1.2
+playsound minecraft:block.anvil.place master @a ~ ~ ~ 0.35 1.9
+particle minecraft:gust ~ ~ ~ 0.2 0.2 0.2 0 2 force
+particle minecraft:crit ~ ~ ~ 0.15 0.15 0.15 0.1 8 force
+function hookshot:spawn_wire_entities
+attribute @s minecraft:fall_damage_multiplier modifier remove hookshot:fall_guard
+attribute @s minecraft:fall_damage_multiplier modifier add hookshot:fall_guard -1 add_multiplied_total
+scoreboard players set @s Hookshot.FallGuard 100
+scoreboard players set @s Hookshot.PullTicks 36
+scoreboard players set @s Hookshot.PullElapsed 0
+scoreboard players set @s Hookshot.LastSteps 999
+scoreboard players set @s Hookshot.StuckTicks 0
+scoreboard players set @s Hookshot.WireLife 5
+execute at @s run function hookshot:update_wire_and_pull
