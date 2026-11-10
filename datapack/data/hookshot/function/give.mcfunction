@@ -1,1 +1,1 @@
-give @s crossbow[custom_model_data=38,item_name='{"text":"Momentum Hookshot","color":"aqua","bold":true}']
+give @s crossbow[custom_model_data={floats:[38]},item_name='{"text":"Momentum Hookshot","color":"aqua","bold":true}']
