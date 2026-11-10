@@ -15,7 +15,7 @@
                 {
                   "condition": "minecraft:match_tool",
                   "predicate": {
-                    "item": "minecraft:debug_stick"
+                    "items": "minecraft:debug_stick"
                   }
                 }
               ]
@@ -38,7 +38,7 @@
                 },
                 {
                   "function": "minecraft:set_contents",
-                  "type": "minecraft:container",
+                  "component": "minecraft:container",
                   "entries": [
                     {
                       "type": "minecraft:dynamic",
