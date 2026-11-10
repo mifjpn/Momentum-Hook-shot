@@ -4,8 +4,10 @@
       "trigger": "minecraft:shot_crossbow",
       "conditions": {
         "item": {
-          "components": {
-            "minecraft:custom_model_data": 38
+          "predicates": {
+            "minecraft:custom_model_data": {
+              "floats": [38]
+            }
           }
         }
       }
