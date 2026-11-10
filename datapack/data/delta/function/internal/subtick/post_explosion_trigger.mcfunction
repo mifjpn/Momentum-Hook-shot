@@ -1,4 +1,4 @@
-﻿advancement revoke @s only delta:post_explosion_trigger
+advancement revoke @s only delta:post_explosion_trigger
 gamemode adventure @s[scores={delta.internal.gamemode=0}]
 gamemode creative @s[scores={delta.internal.gamemode=1}]
 gamemode spectator @s[scores={delta.internal.gamemode=2}]

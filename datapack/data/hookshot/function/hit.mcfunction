@@ -1,4 +1,4 @@
-﻿data modify storage delta:storage TargetPos set from entity @s Pos
+data modify storage delta:storage TargetPos set from entity @s Pos
 execute as @p[tag=using_hookshot,distance=..40] at @s run function hookshot:pull_player
 execute as @p[tag=using_hookshot,distance=..40] run tag @s remove using_hookshot
 playsound minecraft:entity.wind_charge.wind_burst master @a ~ ~ ~ 1.2 1.2

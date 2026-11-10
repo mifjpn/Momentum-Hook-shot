@@ -1,4 +1,4 @@
-﻿{
+{
   "values": [
     "hookshot:tick",
     "delta:internal/technical/tick"

@@ -1,4 +1,4 @@
-﻿data modify storage delta:storage PlayerPos set from entity @s Pos
+data modify storage delta:storage PlayerPos set from entity @s Pos
 execute store result score $x delta.api.launch run data get storage delta:storage TargetPos[0] 12000
 execute store result score $dx delta.api.launch run data get storage delta:storage PlayerPos[0] 12000
 scoreboard players operation $x delta.api.launch -= $dx delta.api.launch

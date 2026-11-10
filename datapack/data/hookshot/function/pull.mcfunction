@@ -1,4 +1,4 @@
-﻿tp @s ^ ^ ^1.2
+tp @s ^ ^ ^1.2
 particle minecraft:crit ~ ~ ~ 0 0 0 0 1 force
 particle minecraft:electric_spark ~ ~ ~ 0 0 0 0 1 force
 scoreboard players remove @s Hookshot.Step 1
