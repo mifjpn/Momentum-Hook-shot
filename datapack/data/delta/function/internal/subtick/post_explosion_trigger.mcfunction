@@ -11,3 +11,5 @@ execute in minecraft:overworld run item replace entity @s armor.legs from block 
 execute in minecraft:overworld run item replace entity @s armor.chest from block 100001 -64 100000 container.4
 execute in minecraft:overworld run item replace entity @s armor.head from block 100001 -64 100000 container.5
 tp @s ~ ~-1000 ~
+kill @e[type=bat,tag=delta.pre_explosion]
+kill @e[type=bat,tag=delta.post_explosion]

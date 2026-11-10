@@ -1,1 +1,1 @@
-﻿give @s minecraft:crossbow[minecraft:custom_model_data=38,minecraft:custom_data={Hookshot:1b},minecraft:item_name='{"text":"Momentum Hookshot","color":"aqua","bold":true}',minecraft:charged_projectiles=[{id:"minecraft:arrow",count:1}]]
+﻿give @s minecraft:crossbow[minecraft:custom_model_data={floats:[38.0f]},minecraft:custom_data={Hookshot:1b},minecraft:item_name={text:"Momentum Hookshot",color:"aqua",bold:true},minecraft:consumable={consume_seconds:100000.0f,animation:"none",has_consume_particles:false},minecraft:use_cooldown={seconds:0.5f}]
