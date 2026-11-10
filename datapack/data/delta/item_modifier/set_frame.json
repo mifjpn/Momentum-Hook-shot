@@ -1,16 +1,14 @@
-[
+{
+  "function": "minecraft:copy_nbt",
+  "source": {
+    "type": "minecraft:storage",
+    "source": "delta:storage"
+  },
+  "ops": [
     {
-      "function": "minecraft:copy_nbt",
-      "source": {
-        "type": "minecraft:storage",
-        "source": "delta:storage"
-      },
-      "ops": [
-        {
-          "source": "CustomModelData",
-          "target": "CustomModelData",
-          "op": "replace"
-        }
-      ]
+      "source": "CustomModelData",
+      "target": "CustomModelData",
+      "op": "replace"
     }
   ]
+}

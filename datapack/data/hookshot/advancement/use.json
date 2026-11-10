@@ -4,14 +4,11 @@
       "trigger": "minecraft:shot_crossbow",
       "conditions": {
         "item": {
-          "predicates": {
+          "components": {
             "minecraft:custom_model_data": 38
           }
         }
       }
     }
-  },
-  "rewards": {
-    "function": "hookshot:pull"
   }
 }
