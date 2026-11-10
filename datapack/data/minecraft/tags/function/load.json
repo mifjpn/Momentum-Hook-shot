@@ -1,7 +1,1 @@
-{
-  "values": [
-    "delta:internal/technical/load",
-    "forward_spreader:core/load",
-    "hookshot:load"
-  ]
-}
+{"values":["hookshot:load"]}

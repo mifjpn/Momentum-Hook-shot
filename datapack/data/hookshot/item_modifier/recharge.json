@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:set_components",
+  "components": {
+    "minecraft:custom_model_data": {
+      "floats": [38]
+    },
+    "minecraft:charged_projectiles": [
+      {
+        "id": "minecraft:arrow",
+        "count": 1,
+        "components": {
+          "minecraft:intangible_projectile": {}
+        }
+      }
+    ]
+  }
+}
