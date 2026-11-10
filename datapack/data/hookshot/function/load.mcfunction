@@ -16,4 +16,4 @@ scoreboard objectives add Hookshot.VelY dummy
 scoreboard objectives add Hookshot.LastSteps dummy
 scoreboard objectives add Hookshot.StuckTicks dummy
 kill @e[tag=hook_obj]
-say [Momentum-Hook-shot] Hookshot Datapack Loaded successfully (26.3 WallClimb & FullWire).
+say [Momentum-Hook-shot] Hookshot Datapack Loaded successfully (26.3 105m & DualWire).

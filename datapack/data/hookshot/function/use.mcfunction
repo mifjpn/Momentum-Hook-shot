@@ -11,5 +11,5 @@ scoreboard players set @s Hookshot.Cooldown 5
 function hookshot:cleanup_own_entities
 execute at @s run playsound chuzume:launcher_shot master @a ~ ~ ~ 0.75 1.25
 execute at @s run playsound minecraft:entity.fishing_bobber.throw master @a ~ ~ ~ 0.9 1.35
-scoreboard players set $step Hookshot.Step 110
-execute at @s anchored eyes positioned ^ ^ ^0.45 anchored feet run function hookshot:raycast
+scoreboard players set $step Hookshot.Step 210
+execute at @s anchored eyes positioned ^ ^ ^0.5 anchored feet run function hookshot:raycast

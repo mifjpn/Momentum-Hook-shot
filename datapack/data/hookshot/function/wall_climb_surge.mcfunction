@@ -1,5 +1,5 @@
 scoreboard players set @s Hookshot.PullTicks 0
-scoreboard players set @s Hookshot.WireLife 6
+scoreboard players set @s Hookshot.WireLife 8
 attribute @s minecraft:gravity modifier remove hookshot:zero_grav
 attribute @s minecraft:gravity modifier remove hookshot:wall_hang
 attribute @s minecraft:gravity modifier add hookshot:wall_hang -0.60 add_multiplied_total
