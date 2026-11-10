@@ -55,9 +55,3 @@
     }
   ]
 }
-```[cite: 56]
-
-<ElicitationsGroup message="次の確認へ進みますか？">
-  <Elicitation label="他のloot_tableを確認する" query="他にも確認・修正が必要なloot_tableファイルがあればパスと中身を渡します。"/>
-  <Elicitation label="データパック全体の検証を完了する" query="これでデータパック内のすべてのファイル確認と修正が完了です。"/>
-</ElicitationsGroup>
