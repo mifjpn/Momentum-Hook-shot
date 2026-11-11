@@ -4,6 +4,8 @@
     "minecraft:custom_model_data": {
       "floats": [38]
     },
+    "minecraft:unbreakable": {},
+    "minecraft:damage": 0,
     "minecraft:charged_projectiles": [
       {
         "id": "minecraft:arrow",

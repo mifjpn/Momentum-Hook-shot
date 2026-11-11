@@ -3,6 +3,8 @@
   "components": {
     "minecraft:custom_model_data": {
       "floats": [40]
-    }
+    },
+    "minecraft:unbreakable": {},
+    "minecraft:damage": 0
   }
 }
