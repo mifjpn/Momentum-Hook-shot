@@ -11,7 +11,6 @@ scoreboard objectives add Hookshot.PullTicks dummy
 scoreboard objectives add Hookshot.PullElapsed dummy
 scoreboard objectives add Hookshot.WireLife dummy
 scoreboard objectives add Hookshot.BrakeTicks dummy
-scoreboard objectives add Hookshot.ZBrakeTicks dummy
 scoreboard objectives add Hookshot.FallGuard dummy
 scoreboard objectives add Hookshot.WallHang dummy
 scoreboard objectives add Hookshot.StepGuard dummy
@@ -28,4 +27,4 @@ scoreboard objectives add Hookshot.JoinGuard dummy
 scoreboard players add $server_tick Hookshot.Step 100
 kill @e[tag=hook_obj]
 kill @e[tag=hook_math_tmp]
-say [Momentum-Hook-shot] Hookshot Datapack Loaded successfully (26.3 DiagZeroZ & WallClimbBoost).
+say [Momentum-Hook-shot] Hookshot Datapack Loaded successfully (26.3 UnifiedFixed3Block).
