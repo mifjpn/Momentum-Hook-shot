@@ -7,64 +7,31 @@ execute store result score @s Hookshot.PlayerY run data get entity @s Pos[1] 100
 scoreboard players operation $dy Hookshot.AnchorY = @s Hookshot.AnchorY
 scoreboard players operation $dy Hookshot.AnchorY -= @s Hookshot.PlayerY
 scoreboard players set @s Hookshot.BrakeTicks 4
-execute if score @s Hookshot.ShotPitch matches -64..-15 run scoreboard players set @s Hookshot.BrakeTicks 5
+execute if score @s Hookshot.Mode matches 2 run scoreboard players set @s Hookshot.BrakeTicks 6
 function hookshot:step_xy_brake
-execute if score @s Hookshot.ShotPitch matches 46.. if score $dy Hookshot.AnchorY matches ..-40 run return 0
+execute if score @s Hookshot.Mode matches 4 run return 0
+execute if score @s Hookshot.Mode matches 2 run attribute @s minecraft:gravity modifier remove hookshot:wall_hang
+execute if score @s Hookshot.Mode matches 2 run scoreboard players set @s Hookshot.WallHang 0
+execute if score @s Hookshot.Mode matches 2 if score @s Hookshot.VelY matches 9.. run scoreboard players set @s Hookshot.ZBrakeTicks 5
+execute if score @s Hookshot.Mode matches 2 if score @s Hookshot.VelY matches 9.. run return run function hookshot:step_z_brake
+execute if score @s Hookshot.Mode matches 2 if score @s Hookshot.VelY matches ..-22 run scoreboard players set $v_tier Hookshot.VelY 5
+execute if score @s Hookshot.Mode matches 2 if score @s Hookshot.VelY matches ..-22 run function hookshot:apply_v_tier
+execute if score @s Hookshot.Mode matches 2 run return 0
 scoreboard players set $v_tier Hookshot.VelY 0
-execute if score @s Hookshot.ShotPitch matches -14.. run attribute @s minecraft:gravity modifier remove hookshot:wall_hang
-execute if score @s Hookshot.ShotPitch matches -14.. run attribute @s minecraft:gravity modifier add hookshot:wall_hang -0.45 add_multiplied_total
-execute if score @s Hookshot.ShotPitch matches -14.. run scoreboard players set @s Hookshot.WallHang 9
-execute if score @s Hookshot.ShotPitch matches -14.. if score @s Hookshot.VelY matches ..-20 run scoreboard players set $v_tier Hookshot.VelY 3
-execute if score @s Hookshot.ShotPitch matches -14.. if score @s Hookshot.VelY matches -19..-5 run scoreboard players set $v_tier Hookshot.VelY 2
-execute if score @s Hookshot.ShotPitch matches -14.. if score @s Hookshot.VelY matches -4..18 run scoreboard players set $v_tier Hookshot.VelY 1
-execute if score @s Hookshot.ShotPitch matches -14.. if score @s Hookshot.VelY matches 19..48 run scoreboard players set $v_tier Hookshot.VelY 5
-execute if score @s Hookshot.ShotPitch matches -14.. if score @s Hookshot.VelY matches 65.. run scoreboard players set $v_tier Hookshot.VelY 4
-execute if score @s Hookshot.ShotPitch matches -64..-15 run attribute @s minecraft:gravity modifier remove hookshot:wall_hang
-execute if score @s Hookshot.ShotPitch matches -64..-15 run scoreboard players set @s Hookshot.WallHang 0
-execute if score @s Hookshot.ShotPitch matches -64..-15 if score @s Hookshot.VelY matches ..8 run scoreboard players set $v_tier Hookshot.VelY 1
-execute if score @s Hookshot.ShotPitch matches -64..-15 if score @s Hookshot.VelY matches 9..26 run scoreboard players set $v_tier Hookshot.VelY 5
-execute if score @s Hookshot.ShotPitch matches -64..-15 if score @s Hookshot.VelY matches 46..70 run scoreboard players set $v_tier Hookshot.VelY 4
-execute if score @s Hookshot.ShotPitch matches -64..-15 if score @s Hookshot.VelY matches 71..98 run scoreboard players set $v_tier Hookshot.VelY 6
-execute if score @s Hookshot.ShotPitch matches -64..-15 if score @s Hookshot.VelY matches 99.. run scoreboard players set $v_tier Hookshot.VelY 7
-execute if score @s Hookshot.ShotPitch matches ..-65 run attribute @s minecraft:gravity modifier remove hookshot:wall_hang
-execute if score @s Hookshot.ShotPitch matches ..-65 run attribute @s minecraft:gravity modifier add hookshot:wall_hang -0.45 add_multiplied_total
-execute if score @s Hookshot.ShotPitch matches ..-65 run scoreboard players set @s Hookshot.WallHang 9
-execute if score @s Hookshot.ShotPitch matches ..-65 if score @s Hookshot.VelY matches ..12 run scoreboard players set $v_tier Hookshot.VelY 2
-execute if score @s Hookshot.ShotPitch matches ..-65 if score @s Hookshot.VelY matches 13..35 run scoreboard players set $v_tier Hookshot.VelY 5
-execute if score @s Hookshot.ShotPitch matches ..-65 if score @s Hookshot.VelY matches 63..90 run scoreboard players set $v_tier Hookshot.VelY 4
-execute if score @s Hookshot.ShotPitch matches ..-65 if score @s Hookshot.VelY matches 91.. run scoreboard players set $v_tier Hookshot.VelY 6
-execute if score $v_tier Hookshot.VelY matches 1 if score @s Hookshot.Pitch matches ..-55 run scoreboard players set @s Hookshot.ImpulseV 11
-execute if score $v_tier Hookshot.VelY matches 1 if score @s Hookshot.Pitch matches -54..-20 run scoreboard players set @s Hookshot.ImpulseV 12
-execute if score $v_tier Hookshot.VelY matches 1 if score @s Hookshot.Pitch matches -19..19 run scoreboard players set @s Hookshot.ImpulseV 13
-execute if score $v_tier Hookshot.VelY matches 1 if score @s Hookshot.Pitch matches 20..54 run scoreboard players set @s Hookshot.ImpulseV 14
-execute if score $v_tier Hookshot.VelY matches 1 if score @s Hookshot.Pitch matches 55.. run scoreboard players set @s Hookshot.ImpulseV 15
-execute if score $v_tier Hookshot.VelY matches 2 if score @s Hookshot.Pitch matches ..-55 run scoreboard players set @s Hookshot.ImpulseV 21
-execute if score $v_tier Hookshot.VelY matches 2 if score @s Hookshot.Pitch matches -54..-20 run scoreboard players set @s Hookshot.ImpulseV 22
-execute if score $v_tier Hookshot.VelY matches 2 if score @s Hookshot.Pitch matches -19..19 run scoreboard players set @s Hookshot.ImpulseV 23
-execute if score $v_tier Hookshot.VelY matches 2 if score @s Hookshot.Pitch matches 20..54 run scoreboard players set @s Hookshot.ImpulseV 24
-execute if score $v_tier Hookshot.VelY matches 2 if score @s Hookshot.Pitch matches 55.. run scoreboard players set @s Hookshot.ImpulseV 25
-execute if score $v_tier Hookshot.VelY matches 3 if score @s Hookshot.Pitch matches ..-55 run scoreboard players set @s Hookshot.ImpulseV 31
-execute if score $v_tier Hookshot.VelY matches 3 if score @s Hookshot.Pitch matches -54..-20 run scoreboard players set @s Hookshot.ImpulseV 32
-execute if score $v_tier Hookshot.VelY matches 3 if score @s Hookshot.Pitch matches -19..19 run scoreboard players set @s Hookshot.ImpulseV 33
-execute if score $v_tier Hookshot.VelY matches 3 if score @s Hookshot.Pitch matches 20..54 run scoreboard players set @s Hookshot.ImpulseV 34
-execute if score $v_tier Hookshot.VelY matches 3 if score @s Hookshot.Pitch matches 55.. run scoreboard players set @s Hookshot.ImpulseV 35
-execute if score $v_tier Hookshot.VelY matches 4 if score @s Hookshot.Pitch matches ..-55 run scoreboard players set @s Hookshot.ImpulseV 41
-execute if score $v_tier Hookshot.VelY matches 4 if score @s Hookshot.Pitch matches -54..-20 run scoreboard players set @s Hookshot.ImpulseV 42
-execute if score $v_tier Hookshot.VelY matches 4 if score @s Hookshot.Pitch matches -19..19 run scoreboard players set @s Hookshot.ImpulseV 43
-execute if score $v_tier Hookshot.VelY matches 4 if score @s Hookshot.Pitch matches 20..54 run scoreboard players set @s Hookshot.ImpulseV 44
-execute if score $v_tier Hookshot.VelY matches 4 if score @s Hookshot.Pitch matches 55.. run scoreboard players set @s Hookshot.ImpulseV 45
-execute if score $v_tier Hookshot.VelY matches 5 if score @s Hookshot.Pitch matches ..-55 run scoreboard players set @s Hookshot.ImpulseV 51
-execute if score $v_tier Hookshot.VelY matches 5 if score @s Hookshot.Pitch matches -54..-20 run scoreboard players set @s Hookshot.ImpulseV 52
-execute if score $v_tier Hookshot.VelY matches 5 if score @s Hookshot.Pitch matches -19..19 run scoreboard players set @s Hookshot.ImpulseV 53
-execute if score $v_tier Hookshot.VelY matches 5 if score @s Hookshot.Pitch matches 20..54 run scoreboard players set @s Hookshot.ImpulseV 54
-execute if score $v_tier Hookshot.VelY matches 5 if score @s Hookshot.Pitch matches 55.. run scoreboard players set @s Hookshot.ImpulseV 55
-execute if score $v_tier Hookshot.VelY matches 6 if score @s Hookshot.Pitch matches ..-55 run scoreboard players set @s Hookshot.ImpulseV 61
-execute if score $v_tier Hookshot.VelY matches 6 if score @s Hookshot.Pitch matches -54..-20 run scoreboard players set @s Hookshot.ImpulseV 62
-execute if score $v_tier Hookshot.VelY matches 6 if score @s Hookshot.Pitch matches -19..19 run scoreboard players set @s Hookshot.ImpulseV 63
-execute if score $v_tier Hookshot.VelY matches 6 if score @s Hookshot.Pitch matches 20..54 run scoreboard players set @s Hookshot.ImpulseV 64
-execute if score $v_tier Hookshot.VelY matches 6 if score @s Hookshot.Pitch matches 55.. run scoreboard players set @s Hookshot.ImpulseV 65
-execute if score $v_tier Hookshot.VelY matches 7 if score @s Hookshot.Pitch matches ..-55 run scoreboard players set @s Hookshot.ImpulseV 71
-execute if score $v_tier Hookshot.VelY matches 7 if score @s Hookshot.Pitch matches -54..-20 run scoreboard players set @s Hookshot.ImpulseV 72
-execute if score $v_tier Hookshot.VelY matches 7 if score @s Hookshot.Pitch matches -19..19 run scoreboard players set @s Hookshot.ImpulseV 73
-execute if score $v_tier Hookshot.VelY matches 7 if score @s Hookshot.Pitch matches 20..54 run scoreboard players set @s Hookshot.ImpulseV 74
-execute if score $v_tier Hookshot.VelY matches 7 if score @s Hookshot.Pitch matches 55.. run scoreboard players set @s Hookshot.ImpulseV 75
+execute if score @s Hookshot.Mode matches 1 run attribute @s minecraft:gravity modifier remove hookshot:wall_hang
+execute if score @s Hookshot.Mode matches 1 run attribute @s minecraft:gravity modifier add hookshot:wall_hang -0.45 add_multiplied_total
+execute if score @s Hookshot.Mode matches 1 run scoreboard players set @s Hookshot.WallHang 9
+execute if score @s Hookshot.Mode matches 1 if score @s Hookshot.VelY matches ..-20 run scoreboard players set $v_tier Hookshot.VelY 3
+execute if score @s Hookshot.Mode matches 1 if score @s Hookshot.VelY matches -19..-5 run scoreboard players set $v_tier Hookshot.VelY 2
+execute if score @s Hookshot.Mode matches 1 if score @s Hookshot.VelY matches -4..18 run scoreboard players set $v_tier Hookshot.VelY 1
+execute if score @s Hookshot.Mode matches 1 if score @s Hookshot.VelY matches 19..48 run scoreboard players set $v_tier Hookshot.VelY 5
+execute if score @s Hookshot.Mode matches 1 if score @s Hookshot.VelY matches 65.. run scoreboard players set $v_tier Hookshot.VelY 4
+execute if score @s Hookshot.Mode matches 3 run attribute @s minecraft:gravity modifier remove hookshot:wall_hang
+execute if score @s Hookshot.Mode matches 3 run attribute @s minecraft:gravity modifier add hookshot:wall_hang -0.48 add_multiplied_total
+execute if score @s Hookshot.Mode matches 3 run scoreboard players set @s Hookshot.WallHang 11
+execute if score @s Hookshot.Mode matches 3 if score @s Hookshot.VelY matches ..5 run scoreboard players set $v_tier Hookshot.VelY 3
+execute if score @s Hookshot.Mode matches 3 if score @s Hookshot.VelY matches 6..28 run scoreboard players set $v_tier Hookshot.VelY 2
+execute if score @s Hookshot.Mode matches 3 if score @s Hookshot.VelY matches 29..52 run scoreboard players set $v_tier Hookshot.VelY 1
+execute if score @s Hookshot.Mode matches 3 if score @s Hookshot.VelY matches 53..80 run scoreboard players set $v_tier Hookshot.VelY 5
+execute if score @s Hookshot.Mode matches 3 if score @s Hookshot.VelY matches 115.. run scoreboard players set $v_tier Hookshot.VelY 4
+execute if score $v_tier Hookshot.VelY matches 1.. run function hookshot:apply_v_tier
