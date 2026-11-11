@@ -19,7 +19,7 @@ tag @e[tag=hook_cur_anchor] remove hook_cur_anchor
 execute as @e[type=minecraft:marker,tag=hook_anchor] if score @s Hookshot.ID = $cid Hookshot.ID run tag @s add hook_cur_anchor
 execute at @s run function hookshot:update_wire_geometry
 tag @e[tag=hook_cur_anchor] remove hook_cur_anchor
-execute if score $wire_steps Hookshot.Step matches ..9 if score @s Hookshot.Pitch matches ..-20 if score $dy Hookshot.AnchorY matches 80.. run return run function hookshot:wall_climb_surge
+execute if score $wire_steps Hookshot.Step matches ..14 if score @s Hookshot.Pitch matches ..-20 if score $dy Hookshot.AnchorY matches 80.. run return run function hookshot:wall_climb_surge
 attribute @s minecraft:gravity modifier remove hookshot:wall_hang
 scoreboard players set @s Hookshot.WallHang 0
 attribute @s minecraft:gravity modifier remove hookshot:zero_grav
