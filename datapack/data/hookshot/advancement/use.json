@@ -1,18 +1,7 @@
 {
   "criteria": {
-    "requirement": {
-      "trigger": "minecraft:shot_crossbow",
-      "conditions": {
-        "item": {
-          "items": "minecraft:crossbow",
-          "predicates": {
-            "minecraft:custom_data": "{Hookshot:1b}"
-          }
-        }
-      }
+    "impossible": {
+      "trigger": "minecraft:impossible"
     }
-  },
-  "rewards": {
-    "function": "hookshot:use"
   }
 }
