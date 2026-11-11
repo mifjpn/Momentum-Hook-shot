@@ -6,7 +6,6 @@ execute store result score $px Hookshot.VelY run data get entity @s Pos[0] 100
 execute store result score $pz Hookshot.VelY run data get entity @s Pos[2] 100
 execute store result score $lx Hookshot.VelY run data get entity @e[type=minecraft:marker,tag=hook_math_tmp,limit=1] Pos[0] 100
 execute store result score $lz Hookshot.VelY run data get entity @e[type=minecraft:marker,tag=hook_math_tmp,limit=1] Pos[2] 100
-execute at @s rotated ~ 0 positioned ^1 ^ ^ run tp @e[type=minecraft:marker,tag=hook_math_tmp,limit=1] Pos[0] 100
 execute at @s rotated ~ 0 positioned ^1 ^ ^ run tp @e[type=minecraft:marker,tag=hook_math_tmp,limit=1] ~ ~ ~
 execute store result score $sx Hookshot.VelY run data get entity @e[type=minecraft:marker,tag=hook_math_tmp,limit=1] Pos[0] 100
 execute store result score $sz Hookshot.VelY run data get entity @e[type=minecraft:marker,tag=hook_math_tmp,limit=1] Pos[2] 100
