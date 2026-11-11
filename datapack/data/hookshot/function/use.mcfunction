@@ -7,11 +7,9 @@ execute if items entity @s weapon.mainhand minecraft:crossbow[minecraft:custom_d
 execute if items entity @s weapon.offhand minecraft:crossbow[minecraft:custom_data~{Hookshot:1b}] run item modify entity @s weapon.offhand hookshot:ensure_enchant
 execute at @s anchored eyes positioned ~ ~-0.1 ~ run kill @e[type=minecraft:arrow,distance=..2.5,nbt={inGround:0b},sort=nearest,limit=1]
 attribute @s minecraft:gravity modifier remove hookshot:zero_grav
+attribute @s minecraft:gravity modifier remove hookshot:wall_hang
 scoreboard players set @s Hookshot.PullTicks 0
-scoreboard players set @s Hookshot.BrakeTicks 0
-scoreboard players set @s Hookshot.ZBrakeTicks 0
 scoreboard players set @s Hookshot.Impulse 0
-scoreboard players set @s Hookshot.ImpulseLat 0
 scoreboard players set @s Hookshot.ImpulseV 0
 scoreboard players set @s Hookshot.Cooldown 5
 function hookshot:cleanup_own_entities

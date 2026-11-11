@@ -3,28 +3,23 @@ scoreboard objectives add Hookshot.Leave minecraft.custom:minecraft.leave_game
 scoreboard objectives add Hookshot.Step dummy
 scoreboard objectives add Hookshot.Cooldown dummy
 scoreboard objectives add Hookshot.Impulse dummy
-scoreboard objectives add Hookshot.ImpulseLat dummy
 scoreboard objectives add Hookshot.ImpulseV dummy
 scoreboard objectives add Hookshot.Mode dummy
 scoreboard objectives add Hookshot.ID dummy
 scoreboard objectives add Hookshot.PullTicks dummy
 scoreboard objectives add Hookshot.PullElapsed dummy
 scoreboard objectives add Hookshot.WireLife dummy
-scoreboard objectives add Hookshot.BrakeTicks dummy
 scoreboard objectives add Hookshot.FallGuard dummy
-scoreboard objectives add Hookshot.WallHang dummy
 scoreboard objectives add Hookshot.StepGuard dummy
 scoreboard objectives add Hookshot.AnchorY dummy
 scoreboard objectives add Hookshot.PlayerY dummy
 scoreboard objectives add Hookshot.LastY dummy
 scoreboard objectives add Hookshot.Pitch dummy
 scoreboard objectives add Hookshot.ShotPitch dummy
-scoreboard objectives add Hookshot.VelY dummy
 scoreboard objectives add Hookshot.LastSteps dummy
 scoreboard objectives add Hookshot.StuckTicks dummy
 scoreboard objectives add Hookshot.LastTick dummy
 scoreboard objectives add Hookshot.JoinGuard dummy
 scoreboard players add $server_tick Hookshot.Step 100
 kill @e[tag=hook_obj]
-kill @e[tag=hook_math_tmp]
-say [Momentum-Hook-shot] Hookshot Datapack Loaded successfully (26.3 UnifiedFixed3Block).
+say [Momentum-Hook-shot] Hookshot Datapack Loaded successfully (26.3 ZeroXYSnap & Z6Hop).
