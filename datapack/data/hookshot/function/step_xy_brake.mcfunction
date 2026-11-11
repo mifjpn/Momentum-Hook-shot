@@ -15,9 +15,9 @@ scoreboard players operation $vz Hookshot.VelY *= $lz Hookshot.VelY
 scoreboard players operation $fwd Hookshot.VelY = $vx Hookshot.VelY
 scoreboard players operation $fwd Hookshot.VelY += $vz Hookshot.VelY
 scoreboard players operation $fwd Hookshot.VelY /= $c100 Hookshot.VelY
-execute if score $fwd Hookshot.VelY matches 90.. run scoreboard players set @s Hookshot.Impulse 51
-execute if score $fwd Hookshot.VelY matches 55..89 run scoreboard players set @s Hookshot.Impulse 52
-execute if score $fwd Hookshot.VelY matches 30..54 run scoreboard players set @s Hookshot.Impulse 53
-execute if score $fwd Hookshot.VelY matches 20..29 run scoreboard players set @s Hookshot.Impulse 54
-execute if score $fwd Hookshot.VelY matches ..19 run scoreboard players set @s Hookshot.BrakeTicks 1
+execute if score $fwd Hookshot.VelY matches 85.. run scoreboard players set @s Hookshot.Impulse 51
+execute if score $fwd Hookshot.VelY matches 50..84 run scoreboard players set @s Hookshot.Impulse 52
+execute if score $fwd Hookshot.VelY matches 24..49 run scoreboard players set @s Hookshot.Impulse 53
+execute if score $fwd Hookshot.VelY matches 10..23 run scoreboard players set @s Hookshot.Impulse 54
+execute if score $fwd Hookshot.VelY matches ..9 run scoreboard players set @s Hookshot.BrakeTicks 1
 scoreboard players remove @s Hookshot.BrakeTicks 1

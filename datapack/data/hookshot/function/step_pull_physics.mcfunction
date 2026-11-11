@@ -30,9 +30,12 @@ scoreboard players operation $v2 Hookshot.VelY = $vy Hookshot.VelY
 scoreboard players operation $v2 Hookshot.VelY *= $vy Hookshot.VelY
 scoreboard players operation $v2 Hookshot.VelY += $h2 Hookshot.VelY
 execute positioned ~ ~1.1 ~ if entity @e[tag=hook_cur_anchor,distance=28..] if score $v2 Hookshot.VelY matches ..32400 run scoreboard players set @s Hookshot.Impulse 7
-execute positioned ~ ~1.1 ~ if entity @e[tag=hook_cur_anchor,distance=6.5..28] if score $v2 Hookshot.VelY matches ..19600 run scoreboard players set @s Hookshot.Impulse 1
-execute positioned ~ ~1.1 ~ if entity @e[tag=hook_cur_anchor,distance=6.5..28] if score $h2 Hookshot.VelY matches 25600.. run scoreboard players set @s Hookshot.Impulse 53
-execute positioned ~ ~1.1 ~ if entity @e[tag=hook_cur_anchor,distance=..6.5] if score @s Hookshot.ShotPitch matches ..-29 if score $v2 Hookshot.VelY matches ..16900 run scoreboard players set @s Hookshot.Impulse 1
-execute positioned ~ ~1.1 ~ if entity @e[tag=hook_cur_anchor,distance=..6.5] if score @s Hookshot.ShotPitch matches -28.. if score $h2 Hookshot.VelY matches ..4900 run scoreboard players set @s Hookshot.Impulse 2
-execute positioned ~ ~1.1 ~ if entity @e[tag=hook_cur_anchor,distance=..6.5] if score @s Hookshot.ShotPitch matches -28.. if score $h2 Hookshot.VelY matches 9000.. run scoreboard players set @s Hookshot.Impulse 52
-execute positioned ~ ~1.1 ~ if entity @e[tag=hook_cur_anchor,distance=..28] if score $dy Hookshot.AnchorY matches 220.. if score @s Hookshot.Pitch matches -19..35 if score $v2 Hookshot.VelY matches ..16900 run scoreboard players set @s Hookshot.Impulse 9
+execute positioned ~ ~1.1 ~ if entity @e[tag=hook_cur_anchor,distance=7.5..28] if score $v2 Hookshot.VelY matches ..19600 run scoreboard players set @s Hookshot.Impulse 1
+execute positioned ~ ~1.1 ~ if entity @e[tag=hook_cur_anchor,distance=7.5..28] if score $h2 Hookshot.VelY matches 25600.. run scoreboard players set @s Hookshot.Impulse 53
+execute positioned ~ ~1.1 ~ if entity @e[tag=hook_cur_anchor,distance=7.5..28] if score $dy Hookshot.AnchorY matches 220.. if score @s Hookshot.Pitch matches -19..35 if score $v2 Hookshot.VelY matches ..16900 run scoreboard players set @s Hookshot.Impulse 9
+execute positioned ~ ~1.1 ~ if entity @e[tag=hook_cur_anchor,distance=..7.5] if score @s Hookshot.ShotPitch matches ..-65 if score $v2 Hookshot.VelY matches ..14400 run scoreboard players set @s Hookshot.Impulse 1
+execute positioned ~ ~1.1 ~ if entity @e[tag=hook_cur_anchor,distance=..7.5] if score @s Hookshot.ShotPitch matches ..-65 if score $v2 Hookshot.VelY matches 19600.. run scoreboard players set @s Hookshot.Impulse 55
+execute positioned ~ ~1.1 ~ if entity @e[tag=hook_cur_anchor,distance=..7.5] if score @s Hookshot.ShotPitch matches -64..-15 if score $v2 Hookshot.VelY matches ..3600 run scoreboard players set @s Hookshot.Impulse 2
+execute positioned ~ ~1.1 ~ if entity @e[tag=hook_cur_anchor,distance=..7.5] if score @s Hookshot.ShotPitch matches -64..-15 if score $v2 Hookshot.VelY matches 8100.. run scoreboard players set @s Hookshot.Impulse 55
+execute positioned ~ ~1.1 ~ if entity @e[tag=hook_cur_anchor,distance=..7.5] if score @s Hookshot.ShotPitch matches -14.. if score $h2 Hookshot.VelY matches ..4900 run scoreboard players set @s Hookshot.Impulse 2
+execute positioned ~ ~1.1 ~ if entity @e[tag=hook_cur_anchor,distance=..7.5] if score @s Hookshot.ShotPitch matches -14.. if score $h2 Hookshot.VelY matches 9000.. run scoreboard players set @s Hookshot.Impulse 52
