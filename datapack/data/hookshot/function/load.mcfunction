@@ -25,4 +25,4 @@ scoreboard objectives add Hookshot.JoinGuard dummy
 scoreboard players add $server_tick Hookshot.Step 100
 kill @e[tag=hook_obj]
 kill @e[tag=hook_math_tmp]
-say [Momentum-Hook-shot] Hookshot Datapack Loaded successfully (26.3 XYStop & LoginGuard).
+say [Momentum-Hook-shot] Hookshot Datapack Loaded successfully (26.3 XYStop & 3BlockHop).
