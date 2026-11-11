@@ -11,9 +11,11 @@ scoreboard objectives add Hookshot.WallHang dummy
 scoreboard objectives add Hookshot.StepGuard dummy
 scoreboard objectives add Hookshot.AnchorY dummy
 scoreboard objectives add Hookshot.PlayerY dummy
+scoreboard objectives add Hookshot.LastY dummy
 scoreboard objectives add Hookshot.Pitch dummy
+scoreboard objectives add Hookshot.ShotPitch dummy
 scoreboard objectives add Hookshot.VelY dummy
 scoreboard objectives add Hookshot.LastSteps dummy
 scoreboard objectives add Hookshot.StuckTicks dummy
 kill @e[tag=hook_obj]
-say [Momentum-Hook-shot] Hookshot Datapack Loaded successfully (26.3 UnifiedHop).
+say [Momentum-Hook-shot] Hookshot Datapack Loaded successfully (26.3 FullPull & 6BlockHop).
