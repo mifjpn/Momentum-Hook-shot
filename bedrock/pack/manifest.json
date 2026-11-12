@@ -1,0 +1,30 @@
+{
+    "format_version":  2,
+    "header":  {
+                   "name":  "Momentum Hookshot Bedrock",
+                   "description":  "Momentum Hookshot 3D Skins & Sounds for GeyserMC (26.3+)",
+                   "uuid":  "0458e77d-b109-9cd1-3265-8cdf605238bc",
+                   "version":  [
+                                   1,
+                                   2,
+                                   0
+                               ],
+                   "min_engine_version":  [
+                                              1,
+                                              21,
+                                              0
+                                          ]
+               },
+    "modules":  [
+                    {
+                        "type":  "resources",
+                        "description":  "Momentum Hookshot Resources",
+                        "uuid":  "56d69dca-f044-47f1-a17f-94c32b817782",
+                        "version":  [
+                                        1,
+                                        2,
+                                        0
+                                    ]
+                    }
+                ]
+}

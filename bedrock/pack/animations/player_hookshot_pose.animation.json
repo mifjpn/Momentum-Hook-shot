@@ -1,0 +1,24 @@
+{
+    "format_version":  "1.10.0",
+    "animations":  {
+                       "animation.humanoid.holding":  {
+                                                          "loop":  true,
+                                                          "bones":  {
+                                                                        "leftArm":  {
+                                                                                        "rotation":  [
+                                                                                                         "query.is_item_name_any('slot.weapon.mainhand', 0, 'geyser_custom:momentum_hookshot_standby', 'geyser_custom:momentum_hookshot_reload') ? (math.clamp(query.target_x_rotation, -50.0, 50.0) - 82.0 - this) : (query.is_item_name_any('slot.weapon.offhand', 0, 'geyser_custom:momentum_hookshot_standby', 'geyser_custom:momentum_hookshot_reload') ? (math.clamp(query.target_x_rotation, -50.0, 50.0) - 85.0 - this) : (variable.is_holding_left ? (-this * 0.5 - 18.0) : 0.0))",
+                                                                                                         "query.is_item_name_any('slot.weapon.mainhand', 0, 'geyser_custom:momentum_hookshot_standby', 'geyser_custom:momentum_hookshot_reload') ? (math.clamp(query.target_y_rotation, -45.0, 45.0) + 34.0) : (query.is_item_name_any('slot.weapon.offhand', 0, 'geyser_custom:momentum_hookshot_standby', 'geyser_custom:momentum_hookshot_reload') ? (math.clamp(query.target_y_rotation, -45.0, 45.0) + 15.0) : 0.0)",
+                                                                                                         0
+                                                                                                     ]
+                                                                                    },
+                                                                        "rightArm":  {
+                                                                                         "rotation":  [
+                                                                                                          "query.is_item_name_any('slot.weapon.mainhand', 0, 'geyser_custom:momentum_hookshot_standby', 'geyser_custom:momentum_hookshot_reload') ? (math.clamp(query.target_x_rotation, -50.0, 50.0) - 85.0 - this) : (query.is_item_name_any('slot.weapon.offhand', 0, 'geyser_custom:momentum_hookshot_standby', 'geyser_custom:momentum_hookshot_reload') ? (math.clamp(query.target_x_rotation, -50.0, 50.0) - 82.0 - this) : (variable.is_holding_right ? (-this * 0.5 - 18.0) : 0.0))",
+                                                                                                          "query.is_item_name_any('slot.weapon.mainhand', 0, 'geyser_custom:momentum_hookshot_standby', 'geyser_custom:momentum_hookshot_reload') ? (math.clamp(query.target_y_rotation, -45.0, 45.0) - 15.0) : (query.is_item_name_any('slot.weapon.offhand', 0, 'geyser_custom:momentum_hookshot_standby', 'geyser_custom:momentum_hookshot_reload') ? (math.clamp(query.target_y_rotation, -45.0, 45.0) - 34.0) : 0.0)",
+                                                                                                          0
+                                                                                                      ]
+                                                                                     }
+                                                                    }
+                                                      }
+                   }
+}

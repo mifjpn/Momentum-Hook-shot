@@ -33,3 +33,18 @@ Run the following command in-game to obtain your hook-shot weapon:
 - **Delta:** BigPapi13様 ([GitHub](https://github.com/BigPapi13/Delta))
 - **Oh! My Dat!:** 赤石愛様 ([GitHub](https://github.com/Ai-Akaishi/OhMyDat))
 - **MCCMD-ForwardSpread:** ちぇん様 ([GitHub](https://github.com/ChenCMD/MCCMD-ForwardSpread))
+
+<!-- GEYSER-CONFIG-PACK-DOCS -->
+## Bedrock / GeyserMC 対応（Geyser用設定パック）
+
+uild_bedrock.ps1 を実行すると、edrock/ ディレクトリ直下に以下のファイルが同階層で出力されます。配布時は **Geyser用設定パック** として案内してください。
+
+- edrock/Momentum-HookShot-Bedrock.mcpack : 統合版クライアント配信用3Dリソースパック（見た目・サウンドのみ）
+- edrock/momentum_hookshot.json : GeyserMC サーバー用カスタムアイテムマッピング定義（ormat_version: 2）
+- edrock/Momentum-HookShot-Geyser-ConfigPack.zip : 上記2つをGeyserのフォルダ構成（packs/ と custom_mappings/）でまとめた **Geyser用設定パック**
+
+### GeyserMC（Velocity / Paper）への導入手順
+1. Momentum-HookShot-Geyser-ConfigPack.zip を Geyser のデータフォルダ（例: plugins/Geyser-Velocity/）直下に展開します。
+   - 個別に配置する場合は、.mcpack を packs/ へ、momentum_hookshot.json を custom_mappings/ へ配置します（momentum_hookshot.json を packs/ には置かないでください）。
+2. Geyser の config.yml にて enable-custom-content: true および orce-resource-packs: true を設定します。
+3. Velocity（またはGeyser稼働サーバー）を再起動すると、Geyserが起動時に custom_mappings/momentum_hookshot.json を自動読込し、接続した統合版クライアントへカスタムアイテム定義と .mcpack を自動配信します。

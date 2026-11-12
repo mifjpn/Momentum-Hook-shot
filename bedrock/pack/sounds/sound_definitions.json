@@ -1,0 +1,17 @@
+{
+    "format_version":  "1.20.20",
+    "sound_definitions":  {
+                              "chuzume:launcher_shot":  {
+                                                            "category":  "player",
+                                                            "sounds":  [
+                                                                           "sounds/chuzume/lemudcrab/launcher"
+                                                                       ]
+                                                        },
+                              "chuzume.launcher_shot":  {
+                                                            "category":  "player",
+                                                            "sounds":  [
+                                                                           "sounds/chuzume/lemudcrab/launcher"
+                                                                       ]
+                                                        }
+                          }
+}

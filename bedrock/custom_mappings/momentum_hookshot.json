@@ -1,0 +1,41 @@
+{
+    "format_version":  2,
+    "items":  {
+                  "minecraft:crossbow":  [
+                                             {
+                                                 "type":  "definition",
+                                                 "model":  "minecraft:crossbow",
+                                                 "bedrock_identifier":  "geyser_custom:momentum_hookshot_reload",
+                                                 "display_name":  "Momentum Hookshot",
+                                                 "priority":  2,
+                                                 "predicate":  {
+                                                                   "type":  "range_dispatch",
+                                                                   "property":  "custom_model_data",
+                                                                   "index":  0,
+                                                                   "threshold":  40
+                                                               },
+                                                 "bedrock_options":  {
+                                                                         "icon":  "momentum_hookshot_reload",
+                                                                         "allow_offhand":  true
+                                                                     }
+                                             },
+                                             {
+                                                 "type":  "definition",
+                                                 "model":  "minecraft:crossbow",
+                                                 "bedrock_identifier":  "geyser_custom:momentum_hookshot_standby",
+                                                 "display_name":  "Momentum Hookshot",
+                                                 "priority":  1,
+                                                 "predicate":  {
+                                                                   "type":  "range_dispatch",
+                                                                   "property":  "custom_model_data",
+                                                                   "index":  0,
+                                                                   "threshold":  38
+                                                               },
+                                                 "bedrock_options":  {
+                                                                         "icon":  "momentum_hookshot_standby",
+                                                                         "allow_offhand":  true
+                                                                     }
+                                             }
+                                         ]
+              }
+}

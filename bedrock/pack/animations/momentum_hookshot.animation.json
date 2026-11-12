@@ -1,0 +1,49 @@
+{
+    "format_version":  "1.10.0",
+    "animations":  {
+                       "animation.momentum_hookshot.first_person":  {
+                                                                        "loop":  true,
+                                                                        "bones":  {
+                                                                                      "hookshot_display":  {
+                                                                                                               "position":  [
+                                                                                                                                1.5,
+                                                                                                                                -1.5,
+                                                                                                                                -3.5
+                                                                                                                            ],
+                                                                                                               "rotation":  [
+                                                                                                                                75,
+                                                                                                                                12,
+                                                                                                                                -8
+                                                                                                                            ],
+                                                                                                               "scale":  [
+                                                                                                                             0.85,
+                                                                                                                             0.85,
+                                                                                                                             0.85
+                                                                                                                         ]
+                                                                                                           }
+                                                                                  }
+                                                                    },
+                       "animation.momentum_hookshot.third_person":  {
+                                                                        "loop":  true,
+                                                                        "bones":  {
+                                                                                      "hookshot_display":  {
+                                                                                                               "position":  [
+                                                                                                                                0,
+                                                                                                                                -1.75,
+                                                                                                                                -4.25
+                                                                                                                            ],
+                                                                                                               "rotation":  [
+                                                                                                                                85,
+                                                                                                                                15,
+                                                                                                                                0
+                                                                                                                            ],
+                                                                                                               "scale":  [
+                                                                                                                             0.85,
+                                                                                                                             0.85,
+                                                                                                                             0.85
+                                                                                                                         ]
+                                                                                                           }
+                                                                                  }
+                                                                    }
+                   }
+}

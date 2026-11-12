@@ -1,0 +1,12 @@
+{
+    "resource_pack_name":  "momentum_hookshot",
+    "texture_name":  "atlas.items",
+    "texture_data":  {
+                         "momentum_hookshot_standby":  {
+                                                           "textures":  "textures/items/momentum_hookshot_standby"
+                                                       },
+                         "momentum_hookshot_reload":  {
+                                                          "textures":  "textures/items/momentum_hookshot_reload"
+                                                      }
+                     }
+}

@@ -1,0 +1,8 @@
+item.geyser_custom:momentum_hookshot_standby.name=Momentum Hookshot
+item.geyser_custom:momentum_hookshot_reload.name=Momentum Hookshot
+death.attack.bullet=%1$sは%2$sに撃ち抜かれた
+death.attack.bullet.item=%1$sは%2$sの%3$sで撃ち抜かれた
+death.attack.bullet_headshot=%1$sは%2$sに正確に頭を撃ち抜かれた
+death.attack.bullet_headshot.item=%1$sは%2$sの%3$sで正確に撃ち抜かれた
+death.attack.thrown_gun=%1$sは%2$sが投げた銃をぶつけられた。
+death.attack.thrown_gun.item=%1$sは%2$sが投げた銃をぶつけられた。
