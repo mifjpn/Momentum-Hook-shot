@@ -1,0 +1,378 @@
+# Bedrock Client Error & Cache Dump
+# Generated: 2026-11-12 19:56:13
+
+=== CACHED PACK MANIFESTS ON CLIENT ===
+MANIFEST: C:\Users\mifjp\AppData\Local\Temp\Minecraft Bedrock\minecraftpe\packcache\resource\ekpXdDeCuCw=\manifest.json (Modified: 11/12/2026 19:51:47)
+{
+    "format_version":  2,
+    "header":  {
+                   "name":  "Momentum Hookshot Bedrock",
+                   "description":  "Momentum Hookshot 3D Skins & Sounds for GeyserMC (26.3+)",
+                   "uuid":  "48bcfdd9-dd31-43a7-0c8c-b2e5d5743900",
+                   "version":  [
+                                   1,
+                                   3,
+                                   0
+                               ],
+                   "min_engine_version":  [
+                                              1,
+                                              21,
+                                              0
+                                          ]
+               },
+    "modules":  [
+                    {
+                        "type":  "resources",
+                        "description":  "Momentum Hookshot Resources",
+                        "uuid":  "41aafdf6-e8f7-1ec6-8475-07eb1b252127",
+                        "version":  [
+                                        1,
+                                        3,
+                                        0
+                                    ]
+                    }
+                ]
+}
+
+
+=== BEDROCK LOG FILES ===
+================================================================================
+LOG: C:\Users\mifjp\AppData\Roaming\Minecraft Bedrock\logs\ContentLog2026-11-12_19-50-34_1.txt (Modified: 11/12/2026 19:53:23)
+================================================================================
+
+19:52:55[Molang][error]-particles/water_splash.json | variable.direction.x | Error: unhandled request for unknown variable '.x'
+
+
+19:52:55[Molang][error]-particles/water_splash.json | variable.direction.y | Error: unable to find member variable .y
+
+
+19:52:55[Molang][error]-particles/water_splash.json | variable.direction.y | Error: unhandled request for unknown variable '.y'
+
+
+19:52:55[Molang][error]-particles/water_splash.json | variable.direction.z | Error: unable to find member variable .z
+
+
+19:52:55[Molang][error]-particles/water_splash.json | variable.direction.z | Error: unhandled request for unknown variable '.z'
+
+
+19:52:55[Molang][error]-particles/water_splash.json | variable.direction.x | Error: unable to find member variable .x
+
+
+19:52:55[Molang][error]-particles/water_splash.json | variable.direction.x | Error: unhandled request for unknown variable '.x'
+
+
+19:52:55[Molang][error]-particles/water_splash.json | variable.direction.y | Error: unable to find member variable .y
+
+
+19:52:55[Molang][error]-particles/water_splash.json | variable.direction.y | Error: unhandled request for unknown variable '.y'
+
+
+19:52:55[Molang][error]-particles/water_splash.json | variable.direction.z | Error: unable to find member variable .z
+
+
+19:52:55[Molang][error]-particles/water_splash.json | variable.direction.z | Error: unhandled request for unknown variable '.z'
+
+
+19:52:55[Molang][error]-particles/water_splash.json | variable.direction.x | Error: unable to find member variable .x
+
+
+19:52:55[Molang][error]-particles/water_splash.json | variable.direction.x | Error: unhandled request for unknown variable '.x'
+
+
+19:52:55[Molang][error]-particles/water_splash.json | variable.direction.y | Error: unable to find member variable .y
+
+
+19:52:55[Molang][error]-particles/water_splash.json | variable.direction.y | Error: unhandled request for unknown variable '.y'
+
+
+19:52:55[Molang][error]-particles/water_splash.json | variable.direction.z | Error: unable to find member variable .z
+
+
+19:52:55[Molang][error]-particles/water_splash.json | variable.direction.z | Error: unhandled request for unknown variable '.z'
+
+
+19:52:55[Molang][error]-particles/water_splash.json | variable.direction.x | Error: unable to find member variable .x
+
+
+19:52:55[Molang][error]-particles/water_splash.json | variable.direction.x | Error: unhandled request for unknown variable '.x'
+
+
+19:52:55[Molang][error]-particles/water_splash.json | variable.direction.y | Error: unable to find member variable .y
+
+
+19:52:55[Molang][error]-particles/water_splash.json | variable.direction.y | Error: unhandled request for unknown variable '.y'
+
+
+19:52:55[Molang][error]-particles/water_splash.json | variable.direction.z | Error: unable to find member variable .z
+
+
+19:52:55[Molang][error]-particles/water_splash.json | variable.direction.z | Error: unhandled request for unknown variable '.z'
+
+
+19:52:55[Molang][error]-particles/water_splash.json | variable.direction.x | Error: unable to find member variable .x
+
+
+19:52:55[Molang][error]-particles/water_splash.json | variable.direction.x | Error: unhandled request for unknown variable '.x'
+
+
+19:52:55[Molang][error]-particles/water_splash.json | variable.direction.y | Error: unable to find member variable .y
+
+
+19:52:55[Molang][error]-particles/water_splash.json | variable.direction.y | Error: unhandled request for unknown variable '.y'
+
+
+19:52:55[Molang][error]-particles/water_splash.json | variable.direction.z | Error: unable to find member variable .z
+
+
+19:52:55[Molang][error]-particles/water_splash.json | variable.direction.z | Error: unhandled request for unknown variable '.z'
+
+
+19:52:56[Molang][error]-particles/water_splash.json | variable.direction.x | Error: unable to find member variable .x
+
+
+19:52:56[Molang][error]-particles/water_splash.json | variable.direction.x | Error: unhandled request for unknown variable '.x'
+
+
+19:52:56[Molang][error]-particles/water_splash.json | variable.direction.y | Error: unable to find member variable .y
+
+
+19:52:56[Molang][error]-particles/water_splash.json | variable.direction.y | Error: unhandled request for unknown variable '.y'
+
+
+19:52:56[Molang][error]-particles/water_splash.json | variable.direction.z | Error: unable to find member variable .z
+
+
+19:52:56[Molang][error]-particles/water_splash.json | variable.direction.z | Error: unhandled request for unknown variable '.z'
+
+
+19:52:56[Molang][error]-particles/water_splash.json | variable.direction.x | Error: unable to find member variable .x
+
+
+19:52:56[Molang][error]-particles/water_splash.json | variable.direction.x | Error: unhandled request for unknown variable '.x'
+
+
+19:52:56[Molang][error]-particles/water_splash.json | variable.direction.y | Error: unable to find member variable .y
+
+
+19:52:56[Molang][error]-particles/water_splash.json | variable.direction.y | Error: unhandled request for unknown variable '.y'
+
+
+19:52:56[Molang][error]-particles/water_splash.json | variable.direction.z | Error: unable to find member variable .z
+
+
+19:52:56[Molang][error]-particles/water_splash.json | variable.direction.z | Error: unhandled request for unknown variable '.z'
+
+
+19:52:56[Molang][error]-particles/water_splash.json | variable.direction.x | Error: unable to find member variable .x
+
+
+19:52:56[Molang][error]-particles/water_splash.json | variable.direction.x | Error: unhandled request for unknown variable '.x'
+
+
+19:52:56[Molang][error]-particles/water_splash.json | variable.direction.y | Error: unable to find member variable .y
+
+
+19:52:56[Molang][error]-particles/water_splash.json | variable.direction.y | Error: unhandled request for unknown variable '.y'
+
+
+19:52:56[Molang][error]-particles/water_splash.json | variable.direction.z | Error: unable to find member variable .z
+
+
+19:52:56[Molang][error]-particles/water_splash.json | variable.direction.z | Error: unhandled request for unknown variable '.z'
+
+
+19:52:56[Molang][error]-particles/water_splash.json | variable.direction.x | Error: unable to find member variable .x
+
+
+19:52:56[Molang][error]-particles/water_splash.json | variable.direction.x | Error: unhandled request for unknown variable '.x'
+
+
+19:52:56[Molang][error]-particles/water_splash.json | variable.direction.y | Error: unable to find member variable .y
+
+
+19:52:56[Molang][error]-particles/water_splash.json | variable.direction.y | Error: unhandled request for unknown variable '.y'
+
+
+19:52:56[Molang][error]-particles/water_splash.json | variable.direction.z | Error: unable to find member variable .z
+
+
+19:52:56[Molang][error]-particles/water_splash.json | variable.direction.z | Error: unhandled request for unknown variable '.z'
+
+
+19:52:56[Molang][error]-particles/water_splash.json | variable.direction.x | Error: unable to find member variable .x
+
+
+19:52:56[Molang][error]-particles/water_splash.json | variable.direction.x | Error: unhandled request for unknown variable '.x'
+
+
+19:52:56[Molang][error]-particles/water_splash.json | variable.direction.y | Error: unable to find member variable .y
+
+
+19:52:56[Molang][error]-particles/water_splash.json | variable.direction.y | Error: unhandled request for unknown variable '.y'
+
+
+19:52:56[Molang][error]-particles/water_splash.json | variable.direction.z | Error: unable to find member variable .z
+
+
+19:52:56[Molang][error]-particles/water_splash.json | variable.direction.z | Error: unhandled request for unknown variable '.z'
+
+
+19:52:57[Molang][error]-particles/water_splash.json | variable.direction.x | Error: unable to find member variable .x
+
+
+19:52:57[Molang][error]-particles/water_splash.json | variable.direction.x | Error: unhandled request for unknown variable '.x'
+
+
+19:52:57[Molang][error]-particles/water_splash.json | variable.direction.y | Error: unable to find member variable .y
+
+
+19:52:57[Molang][error]-particles/water_splash.json | variable.direction.y | Error: unhandled request for unknown variable '.y'
+
+
+19:52:57[Molang][error]-particles/water_splash.json | variable.direction.z | Error: unable to find member variable .z
+
+
+19:52:57[Molang][error]-particles/water_splash.json | variable.direction.z | Error: unhandled request for unknown variable '.z'
+
+
+19:52:57[Molang][error]-particles/water_splash.json | variable.direction.x | Error: unable to find member variable .x
+
+
+19:52:57[Molang][error]-particles/water_splash.json | variable.direction.x | Error: unhandled request for unknown variable '.x'
+
+
+19:52:57[Molang][error]-particles/water_splash.json | variable.direction.y | Error: unable to find member variable .y
+
+
+19:52:57[Molang][error]-particles/water_splash.json | variable.direction.y | Error: unhandled request for unknown variable '.y'
+
+
+19:52:57[Molang][error]-particles/water_splash.json | variable.direction.z | Error: unable to find member variable .z
+
+
+19:52:57[Molang][error]-particles/water_splash.json | variable.direction.z | Error: unhandled request for unknown variable '.z'
+
+
+19:52:57[Molang][error]-particles/water_splash.json | variable.direction.x | Error: unable to find member variable .x
+
+
+19:52:57[Molang][error]-particles/water_splash.json | variable.direction.x | Error: unhandled request for unknown variable '.x'
+
+
+19:52:57[Molang][error]-particles/water_splash.json | variable.direction.y | Error: unable to find member variable .y
+
+
+19:52:57[Molang][error]-particles/water_splash.json | variable.direction.y | Error: unhandled request for unknown variable '.y'
+
+
+19:52:57[Molang][error]-particles/water_splash.json | variable.direction.z | Error: unable to find member variable .z
+
+
+19:52:57[Molang][error]-particles/water_splash.json | variable.direction.z | Error: unhandled request for unknown variable '.z'
+
+
+19:52:57[Molang][error]-particles/water_splash.json | variable.direction.x | Error: unable to find member variable .x
+
+
+19:52:57[Molang][error]-particles/water_splash.json | variable.direction.x | Error: unhandled request for unknown variable '.x'
+
+
+19:52:57[Molang][error]-particles/water_splash.json | variable.direction.y | Error: unable to find member variable .y
+
+
+19:52:57[Molang][error]-particles/water_splash.json | variable.direction.y | Error: unhandled request for unknown variable '.y'
+
+
+19:52:57[Molang][error]-particles/water_splash.json | variable.direction.z | Error: unable to find member variable .z
+
+
+19:52:57[Molang][error]-particles/water_splash.json | variable.direction.z | Error: unhandled request for unknown variable '.z'
+
+
+
+================================================================================
+LOG: C:\Users\mifjp\AppData\Roaming\Minecraft Bedrock\Users\2332170540865253598\games\com.mojang\minecraftpe\NonAssertErrorLog.txt (Modified: 11/12/2026 19:50:34)
+================================================================================
+
+=== CURRENT LOCAL BUILD MANIFEST & ANIMATION ===
+{
+    "format_version":  2,
+    "header":  {
+                   "name":  "Momentum Hookshot Bedrock",
+                   "description":  "Momentum Hookshot 3D Skins & Sounds for GeyserMC (26.3+)",
+                   "uuid":  "48bcfdd9-dd31-43a7-0c8c-b2e5d5743900",
+                   "version":  [
+                                   1,
+                                   3,
+                                   0
+                               ],
+                   "min_engine_version":  [
+                                              1,
+                                              21,
+                                              0
+                                          ]
+               },
+    "modules":  [
+                    {
+                        "type":  "resources",
+                        "description":  "Momentum Hookshot Resources",
+                        "uuid":  "41aafdf6-e8f7-1ec6-8475-07eb1b252127",
+                        "version":  [
+                                        1,
+                                        3,
+                                        0
+                                    ]
+                    }
+                ]
+}
+
+{
+    "format_version":  "1.10.0",
+    "animations":  {
+                       "animation.momentum_hookshot.first_person":  {
+                                                                        "loop":  true,
+                                                                        "bones":  {
+                                                                                      "hookshot_display":  {
+                                                                                                               "position":  [
+                                                                                                                                3.5,
+                                                                                                                                11,
+                                                                                                                                3
+                                                                                                                            ],
+                                                                                                               "rotation":  [
+                                                                                                                                90,
+                                                                                                                                60,
+                                                                                                                                -40
+                                                                                                                            ],
+                                                                                                               "scale":  [
+                                                                                                                             0.85,
+                                                                                                                             0.85,
+                                                                                                                             0.85
+                                                                                                                         ]
+                                                                                                           }
+                                                                                  }
+                                                                    },
+                       "animation.momentum_hookshot.third_person":  {
+                                                                        "loop":  true,
+                                                                        "bones":  {
+                                                                                      "hookshot_display":  {
+                                                                                                               "position":  [
+                                                                                                                                0,
+                                                                                                                                14.5,
+                                                                                                                                -3
+                                                                                                                            ],
+                                                                                                               "rotation":  [
+                                                                                                                                18,
+                                                                                                                                0,
+                                                                                                                                0
+                                                                                                                            ],
+                                                                                                               "scale":  [
+                                                                                                                             0.85,
+                                                                                                                             0.85,
+                                                                                                                             0.85
+                                                                                                                         ]
+                                                                                                           }
+                                                                                  }
+                                                                    }
+                   }
+}
+

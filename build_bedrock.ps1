@@ -3,6 +3,14 @@ Add-Type -AssemblyName System.Drawing
 Add-Type -AssemblyName System.IO.Compression
 Add-Type -AssemblyName System.IO.Compression.FileSystem
 
+# --- First-person tuning parameters (+X: Left, +Y: Up, -Z: Forward) ---
+$fpPos          = [double[]]@(17.0, -1.0, -1.0)
+$fpRot          = [double[]]@(0.0, 0.0, -2.0)
+$fpScale        = 2.5
+$packSeedSuffix = "v14"
+$packVersion    = [int[]]@(2, 0, 3)
+# ----------------------------------------------------------------------
+
 $utf8NoBom = New-Object System.Text.UTF8Encoding($false)
 $root = $PSScriptRoot
 if (-not $root) { $root = $PWD.Path }
@@ -128,9 +136,9 @@ function Convert-JavaModelToBedrockGeo([string]$javaModelPath, [string]$geoId) {
                     identifier            = $geoId
                     texture_width         = $texW
                     texture_height        = $texH
-                    visible_bounds_width  = 4.0
-                    visible_bounds_height = 4.0
-                    visible_bounds_offset = [double[]]@(0.0, 0.5, 0.0)
+                    visible_bounds_width  = 8.0
+                    visible_bounds_height = 8.0
+                    visible_bounds_offset = [double[]]@(0.0, 1.0, 0.0)
                 }
                 bones = [object[]]@(
                     [ordered]@{
@@ -139,8 +147,13 @@ function Convert-JavaModelToBedrockGeo([string]$javaModelPath, [string]$geoId) {
                         binding = "q.item_slot_to_bone_name(c.item_slot)"
                     },
                     [ordered]@{
-                        name   = "hookshot_display"
+                        name   = "hookshot_align"
                         parent = "hookshot_root"
+                        pivot  = [double[]]@(0.0, 0.0, 0.0)
+                    },
+                    [ordered]@{
+                        name   = "hookshot_display"
+                        parent = "hookshot_align"
                         pivot  = [double[]]@(0.0, 0.0, 0.0)
                         cubes  = [object[]]$cubes.ToArray()
                     }
@@ -221,22 +234,22 @@ if (Test-Path $srcIcon) { Copy-Item $srcIcon (Join-Path $packDir "pack_icon.png"
 Render-HookshotIcon $standbyModel $srcTex (Join-Path $packDir "textures\items\momentum_hookshot_standby.png")
 Render-HookshotIcon $reloadModel  $srcTex (Join-Path $packDir "textures\items\momentum_hookshot_reload.png")
 
-# 2. manifest.json (fresh UUID v3 + version 1.2.0 to force Bedrock client cache refresh)
+# 2. manifest.json
 $manifest = [ordered]@{
     format_version = 2
     header = [ordered]@{
         name               = "Momentum Hookshot Bedrock"
         description        = "Momentum Hookshot 3D Skins & Sounds for GeyserMC (26.3+)"
-        uuid               = (Get-DeterministicGuid "Momentum-Hook-shot:BedrockPack:Header:v3")
-        version            = [int[]]@(1, 2, 0)
+        uuid               = (Get-DeterministicGuid ("Momentum-Hook-shot:BedrockPack:Header:" + $packSeedSuffix))
+        version            = $packVersion
         min_engine_version = [int[]]@(1, 21, 0)
     }
     modules = [object[]]@(
         [ordered]@{
             type        = "resources"
             description = "Momentum Hookshot Resources"
-            uuid        = (Get-DeterministicGuid "Momentum-Hook-shot:BedrockPack:Module:v3")
-            version     = [int[]]@(1, 2, 0)
+            uuid        = (Get-DeterministicGuid ("Momentum-Hook-shot:BedrockPack:Module:" + $packSeedSuffix))
+            version     = $packVersion
         }
     )
 }
@@ -248,26 +261,34 @@ $geoReload  = Convert-JavaModelToBedrockGeo $reloadModel  "geometry.momentum_hoo
 Write-JsonUtf8 (Join-Path $packDir "models\entity\momentum_hookshot_standby.geo.json") $geoStandby
 Write-JsonUtf8 (Join-Path $packDir "models\entity\momentum_hookshot_reload.geo.json")  $geoReload
 
-# 4. First-person and third-person hand animations
+# 4. First-person & third-person animations
 $animObj = [ordered]@{
     format_version = "1.10.0"
     animations = [ordered]@{
         "animation.momentum_hookshot.first_person" = [ordered]@{
             loop  = $true
             bones = [ordered]@{
+                hookshot_align = [ordered]@{
+                    position = [double[]]@(3.5, 11.0, 3.0)
+                    rotation = [double[]]@(90.0, 60.0, -40.0)
+                }
                 hookshot_display = [ordered]@{
-                    position = [double[]]@(1.5, -1.5, -3.5)
-                    rotation = [double[]]@(75.0, 12.0, -8.0)
-                    scale    = [double[]]@(0.85, 0.85, 0.85)
+                    position = $fpPos
+                    rotation = $fpRot
+                    scale    = [double[]]@($fpScale, $fpScale, $fpScale)
                 }
             }
         }
         "animation.momentum_hookshot.third_person" = [ordered]@{
             loop  = $true
             bones = [ordered]@{
+                hookshot_align = [ordered]@{
+                    position = [double[]]@(0.0, 15.0, 0.5)
+                    rotation = [double[]]@(85.0, 0.0, 0.0)
+                }
                 hookshot_display = [ordered]@{
-                    position = [double[]]@(0.0, -1.75, -4.25)
-                    rotation = [double[]]@(85.0, 15.0, 0.0)
+                    position = [double[]]@(0.0, 3.25, 0.25)
+                    rotation = [double[]]@(0.0, 15.0, 0.0)
                     scale    = [double[]]@(0.85, 0.85, 0.85)
                 }
             }
@@ -276,24 +297,24 @@ $animObj = [ordered]@{
 }
 Write-JsonUtf8 (Join-Path $packDir "animations\momentum_hookshot.animation.json") $animObj
 
-# 4b. Third-person two-handed crossbow aiming stance when holding hookshot
+# 4b. Verified third-person two-handed holding stance
 $playerPoseAnim = [ordered]@{
     format_version = "1.10.0"
     animations = [ordered]@{
-        "animation.humanoid.holding" = [ordered]@{
+        "animation.player.holding" = [ordered]@{
             loop  = $true
             bones = [ordered]@{
-                leftArm = [ordered]@{
+                leftarm = [ordered]@{
                     rotation = [object[]]@(
-                        "query.is_item_name_any('slot.weapon.mainhand', 0, 'geyser_custom:momentum_hookshot_standby', 'geyser_custom:momentum_hookshot_reload') ? (math.clamp(query.target_x_rotation, -50.0, 50.0) - 82.0 - this) : (query.is_item_name_any('slot.weapon.offhand', 0, 'geyser_custom:momentum_hookshot_standby', 'geyser_custom:momentum_hookshot_reload') ? (math.clamp(query.target_x_rotation, -50.0, 50.0) - 85.0 - this) : (variable.is_holding_left ? (-this * 0.5 - 18.0) : 0.0))",
-                        "query.is_item_name_any('slot.weapon.mainhand', 0, 'geyser_custom:momentum_hookshot_standby', 'geyser_custom:momentum_hookshot_reload') ? (math.clamp(query.target_y_rotation, -45.0, 45.0) + 34.0) : (query.is_item_name_any('slot.weapon.offhand', 0, 'geyser_custom:momentum_hookshot_standby', 'geyser_custom:momentum_hookshot_reload') ? (math.clamp(query.target_y_rotation, -45.0, 45.0) + 15.0) : 0.0)",
+                        "query.is_item_name_any('slot.weapon.mainhand', 'geyser_custom:momentum_hookshot_standby', 'geyser_custom:momentum_hookshot_reload') ? (math.clamp(query.target_x_rotation, -50.0, 50.0) - 82.0 - this) : (query.is_item_name_any('slot.weapon.offhand', 'geyser_custom:momentum_hookshot_standby', 'geyser_custom:momentum_hookshot_reload') ? (math.clamp(query.target_x_rotation, -50.0, 50.0) - 85.0 - this) : (variable.is_holding_left ? (-this * 0.5 - 18.0) : 0.0))",
+                        "query.is_item_name_any('slot.weapon.mainhand', 'geyser_custom:momentum_hookshot_standby', 'geyser_custom:momentum_hookshot_reload') ? (math.clamp(query.target_y_rotation, -45.0, 45.0) + 35.0) : (query.is_item_name_any('slot.weapon.offhand', 'geyser_custom:momentum_hookshot_standby', 'geyser_custom:momentum_hookshot_reload') ? (math.clamp(query.target_y_rotation, -45.0, 45.0) + 15.0) : 0.0)",
                         0.0
                     )
                 }
-                rightArm = [ordered]@{
+                rightarm = [ordered]@{
                     rotation = [object[]]@(
-                        "query.is_item_name_any('slot.weapon.mainhand', 0, 'geyser_custom:momentum_hookshot_standby', 'geyser_custom:momentum_hookshot_reload') ? (math.clamp(query.target_x_rotation, -50.0, 50.0) - 85.0 - this) : (query.is_item_name_any('slot.weapon.offhand', 0, 'geyser_custom:momentum_hookshot_standby', 'geyser_custom:momentum_hookshot_reload') ? (math.clamp(query.target_x_rotation, -50.0, 50.0) - 82.0 - this) : (variable.is_holding_right ? (-this * 0.5 - 18.0) : 0.0))",
-                        "query.is_item_name_any('slot.weapon.mainhand', 0, 'geyser_custom:momentum_hookshot_standby', 'geyser_custom:momentum_hookshot_reload') ? (math.clamp(query.target_y_rotation, -45.0, 45.0) - 15.0) : (query.is_item_name_any('slot.weapon.offhand', 0, 'geyser_custom:momentum_hookshot_standby', 'geyser_custom:momentum_hookshot_reload') ? (math.clamp(query.target_y_rotation, -45.0, 45.0) - 34.0) : 0.0)",
+                        "query.is_item_name_any('slot.weapon.mainhand', 'geyser_custom:momentum_hookshot_standby', 'geyser_custom:momentum_hookshot_reload') ? (math.clamp(query.target_x_rotation, -50.0, 50.0) - 85.0 - this) : (query.is_item_name_any('slot.weapon.offhand', 'geyser_custom:momentum_hookshot_standby', 'geyser_custom:momentum_hookshot_reload') ? (math.clamp(query.target_x_rotation, -50.0, 50.0) - 82.0 - this) : (variable.is_holding_right ? (-this * 0.5 - 18.0) : 0.0))",
+                        "query.is_item_name_any('slot.weapon.mainhand', 'geyser_custom:momentum_hookshot_standby', 'geyser_custom:momentum_hookshot_reload') ? (math.clamp(query.target_y_rotation, -45.0, 45.0) - 15.0) : (query.is_item_name_any('slot.weapon.offhand', 'geyser_custom:momentum_hookshot_standby', 'geyser_custom:momentum_hookshot_reload') ? (math.clamp(query.target_y_rotation, -45.0, 45.0) - 35.0) : 0.0)",
                         0.0
                     )
                 }
@@ -338,7 +359,7 @@ foreach ($variant in @("standby", "reload")) {
     Write-JsonUtf8 (Join-Path $packDir "attachables\momentum_hookshot_$variant.json") $attObj
 }
 
-# 6. Item icons, sounds, and lang files (read UTF-8 directly from Java resourcepack lang JSON)
+# 6. Item icons, sounds, and lang files
 $itemTexObj = [ordered]@{
     resource_pack_name = "momentum_hookshot"
     texture_name       = "atlas.items"
@@ -382,7 +403,7 @@ foreach ($pair in @(
 }
 Write-JsonUtf8 (Join-Path $packDir "texts\languages.json") ([string[]]@("en_US", "ja_JP"))
 
-# 7. Geyser custom mappings v2 (definition + range_dispatch)
+# 7. Geyser custom mappings v2
 $geyserMapping = [ordered]@{
     format_version = 2
     items = [ordered]@{
